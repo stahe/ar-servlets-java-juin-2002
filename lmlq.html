@@ -1,0 +1,1737 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/ar-servlets-java-juin-2002/lmlq.html">
+      
+      
+        <link rel="prev" href="yutb.html">
+      
+      
+        <link rel="next" href="kwd-mdr-lbrnmj.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>8. الملاحق - مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP" class="md-header__button md-logo" aria-label="مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. الملاحق
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="التبديل إلى الوضع المظلم"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="التبديل إلى الوضع المظلم" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="التبديل إلى الوضع الفاتح"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="التبديل إلى الوضع الفاتح" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/ar-servlets-java-juin-20025" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP" class="md-nav__button md-logo" aria-label="مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    مقدمة في برمجة الويب بلغة Java باستخدام السيرفلت وصفحات JSP
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/ar-servlets-java-juin-20025" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مرحبًا بكم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mqdm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. مقدمة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lssyt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. الأساسيات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mqdm-l-syrfltt-java-wft-jsp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. مقدمة إلى سيرفلتات Java وصفحات JSP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ttb-ljls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. تتبع الجلسة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tbyq-sb-lryb.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. تطبيق حساب الضرائب
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml-w-java.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. XML و Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="yutb.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. يُتبع...
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. الملاحق
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lmlq.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. الملاحق
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1. أدوات تطوير الويب
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1. أدوات تطوير الويب">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.1. خوادم الويب والمتصفحات ولغات البرمجة النصية
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2. أين تجد الأدوات
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813-easyphp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3. EasyPHP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.3. EasyPHP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8131-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3.1. إدارة PHP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8132-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3.2. إدارة Apache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8133-apache-htpdconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3.3. ملف تكوين Apache htpd.conf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8134-mysql-phpmyadmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3.4. إدارة MySQL باستخدام PhpMyAdmin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#814-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.4. PHP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#815-perl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.5. PERL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#816-vbscript-javascript-perlscript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.6. VBScript، JavaScript، PerlScript
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#817-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.7. JAVA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#818-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.8. خادم Apache
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.8. خادم Apache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.8.1. التكوين
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8182-php-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.8.2. PHP - رابط Apache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8183-perl-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.8.3. رابط PERL-APACHE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#819-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.9. خادم PWS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.9. خادم PWS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8191" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.9.1. التثبيت
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8192" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.9.2. الاختبارات الأولية
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8193-php-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.9.3. PHP - رابط PWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8110-tomcat-java-jsp-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.10. Tomcat: سيرفلتات Java و JSP (صفحات خادم Java)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.10. Tomcat: سيرفلتات Java و JSP (صفحات خادم Java)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.10.1. التثبيت
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81102-tomcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.10.2. بدء/إيقاف تشغيل خادم الويب Tomcat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8111-jbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.11. JBuilder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kwd-mdr-lbrnmj.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. كود مصدر البرنامج
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jf-skrybt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. جافا سكريبت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="toc14772369"></a></p>
+<h1 id="8">8. <span style="color: #365f91">الملاحق</span></h1>
+<p><a id="toc14772370"></a></p>
+<h2 id="81">8.1. <span style="color: #4f81bd">أدوات تطوير الويب</span></h2>
+<p>نوضح هنا أين يمكن العثور على الأدوات اللازمة لتطوير الويب وكيفية تثبيتها. وقد تطورت إصدارات بعض الأدوات، ومن المحتمل ألا تنطبق التفسيرات الواردة هنا على أحدث الإصدارات. وسيتعين على القارئ عندئذٍ تكييف... في دورة برمجة الويب، سنستخدم بشكل أساسي الأدوات التالية، وجميعها متاحة مجانًا:</p>
+<ul>
+  <li><b>متصفح</b> حديث قادر على عرض <bdi dir="ltr" class="odt-ltr-term">XML.</bdi> تم اختبار الأمثلة الواردة في الدورة التدريبية باستخدام <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> 6.
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">JDK</bdi> </b>(مجموعة أدوات تطوير <bdi dir="ltr" class="odt-ltr-term">Java</bdi>) حديثة. تم اختبار الأمثلة الواردة في هذه الدورة باستخدام <bdi dir="ltr" class="odt-ltr-term">JDK 1.4</bdi>. تتضمن مجموعة أدوات تطوير <bdi dir="ltr" class="odt-ltr-term">Java</bdi> هذه المكون الإضافي لمتصفح <bdi dir="ltr" class="odt-ltr-term">Java 1.4</bdi>، الذي يسمح للمتصفحات بعرض تطبيقات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الصغيرة باستخدام <bdi dir="ltr" class="odt-ltr-term">JDK 1.4</bdi>.
+  </li>
+  <li><b>بيئة تطوير <bdi dir="ltr" class="odt-ltr-term">Java</bdi> </b>لكتابة برامج <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الصغيرة. هنا، هي <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> 7.
+  </li>
+  <li><b>خوادم الويب</b>: <bdi dir="ltr" class="odt-ltr-term">Apache</bdi>، <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> (<bdi dir="ltr" class="odt-ltr-term">Personal Web Server</bdi>)، <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi>
+    <ul>
+      <li>سيتم استخدام <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> لتطوير تطبيقات الويب بلغة <bdi dir="ltr" class="odt-ltr-term">PERL</bdi> (<bdi dir="ltr" class="odt-ltr-term">Practical Extracting and Reporting Language</bdi>) أو <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> (<bdi dir="ltr" class="odt-ltr-term">Personal Home Page</bdi>)
+      </li>
+      <li>سيتم استخدام <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> لتطوير تطبيقات الويب بلغة <bdi dir="ltr" class="odt-ltr-term">ASP</bdi> (<bdi dir="ltr" class="odt-ltr-term">Active Server Pages</bdi>) أو <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>
+      </li>
+      <li>سيتم استخدام <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> لتطوير تطبيقات الويب باستخدام برامج <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الصغيرة أو <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> (<bdi dir="ltr" class="odt-ltr-term">Java Server Pages</bdi>)
+      </li>
+    </ul>
+  </li>
+  <li><b>تطبيق لإدارة قواعد البيانات</b>: <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi></b>: أداة تجمع بين خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> ولغة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> ونظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
+  </li>
+</ul>
+<p><a id="toc14772371"></a></p>
+<h3 id="811">8.1.1. <span style="color: #4f81bd">خوادم الويب والمتصفحات ولغات البرمجة النصية</span></h3>
+<ul>
+  <li>خوادم الويب الرئيسية 
+    <ul>
+      <li><bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<bdi dir="ltr" class="odt-ltr-term">Linux</bdi>، <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>)
+      </li>
+      <li>خادم معلومات الإنترنت (<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>) (<bdi dir="ltr" class="odt-ltr-term">NT</bdi>)، خادم الويب الشخصي (<bdi dir="ltr" class="odt-ltr-term">PWS</bdi>) (<bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 9x)
+      </li>
+    </ul>
+  </li>
+  <li>المتصفحات الرئيسية
+    <ul>
+      <li>إنترنت إكسبلورر (ويندوز)
+      </li>
+      <li>نتسكيب (لينكس، ويندوز)
+      </li>
+    </ul>
+  </li>
+  <li><b>لغات </b>البرمجة النصية<b> من جانب الخادم</b>
+    <ul>
+      <li><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> (<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>، <bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)
+      </li>
+      <li>جافا سكريبت (<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>، <bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">Perl</bdi> (أباتشي، <bdi dir="ltr" class="odt-ltr-term">IIS</bdi>، <bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">PHP</bdi> (أباتشي، <bdi dir="ltr" class="odt-ltr-term">IIS</bdi>، <bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">Java</bdi> (<bdi dir="ltr" class="odt-ltr-term">Apache</bdi>، <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>)
+      </li>
+      <li>لغات .<bdi dir="ltr" class="odt-ltr-term">NET</bdi>
+      </li>
+    </ul>
+  </li>
+  <li>لغات البرمجة النصية من جانب المتصفح
+    <ul>
+      <li><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> (<bdi dir="ltr" class="odt-ltr-term">IE</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> (<bdi dir="ltr" class="odt-ltr-term">IE</bdi>، <bdi dir="ltr" class="odt-ltr-term">Netscape</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> (<bdi dir="ltr" class="odt-ltr-term">IE</bdi>)
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">Java</bdi> (<bdi dir="ltr" class="odt-ltr-term">IE</bdi>، <bdi dir="ltr" class="odt-ltr-term">Netscape</bdi>)
+      </li>
+    </ul>
+  </li>
+</ul>
+<p><a id="toc14772372"></a></p>
+<h3 id="812">8.1.2. <span style="color: #4f81bd">أين تجد الأدوات</span></h3>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Netscape
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.netscape.com/</bdi> (رابط التنزيلات)</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>إنترنت إكسبلورر
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.microsoft.com/windows/ie/default.asp</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.php.net</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.php.net/downloads.php</bdi> (ملفات <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> الثنائية)</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>PERL
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.activestate.com http://www.activestate.com/Products/</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.activestate.com/Products/ActivePerl/</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>VBScript، JavaScript
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://msdn.microsoft.com/scripting</bdi> (اتبع رابط <bdi dir="ltr" class="odt-ltr-term">Windows Script</bdi>)</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>JAVA
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://java.sun.com/</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://java.sun.com/downloads.html</bdi> (<bdi dir="ltr" class="odt-ltr-term">JSE</bdi>)</b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://java.sun.com/j2se/1.4/download.html</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>أباتشي
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.apache.org/</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.apache.org/dist/httpd/binaries/win32/</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>PWS
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>مضمن في حزمة خيارات <bdi dir="ltr" class="odt-ltr-term">NT 4.0</bdi> لنظام التشغيل <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 95</b></div><div style="margin:0 0 0.5em 0"><b>مضمن في قرص <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 98 المضغوط</b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/win95.asp</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>IIS
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>(Windows NT/2000)
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.microsoft.com</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org/tomcat/</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>JBuilder
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.borland.com/jbuilder/</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.borland.com/products/downloads/download_jbuilder.html</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>EasyPHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.easyphp.org/</bdi></b></div><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">http://www.easyphp.org/telechargements.php3</bdi></b></div></td></tr></table>
+
+<p><a id="toc14772373"></a></p>
+<h3 id="813-easyphp">8.1.3. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi></span></h3>
+<p>هذا التطبيق مريح للغاية لأنه يضم ما يلي في حزمة واحدة:</p>
+<ul>
+  <li>خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (1.3.x)
+  </li>
+  <li>لغة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> (4.x)
+  </li>
+  <li>نظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> (3.23.x)
+  </li>
+  <li>أداة إدارة <bdi dir="ltr" class="odt-ltr-term">MySQL: PhpMyAdmin</bdi>
+  </li>
+</ul>
+
+<p>يبدو تطبيق التثبيت كما يلي:</p>
+<p><img src="images/100000000000020A0000005234161DCB.png" width="522" height="82" style="width:13.811cm;height:2.17cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A0000005234161DCB.png" /></p>
+<p>تثبيت <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi> سهل للغاية، ويتم إنشاء بنية مجلدات في نظام الملفات:</p>
+<p><img src="images/10000000000001B600000146978AB819.png" width="438" height="326" style="width:11.589cm;height:8.625cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B600000146978AB819.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>easyphp.exe
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">ملف التطبيق القابل للتنفيذ</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>apache
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">هيكل دليل خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mysql
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">دليل قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>phpMyAdmin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">هيكل دليل تطبيق <bdi dir="ltr" class="odt-ltr-term">phpMyAdmin</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">هيكل دليل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>www
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">جذر شجرة الدلائل لصفحات الويب التي يقدمها خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>cgi-bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الدليل الذي يمكنك وضع نصوص <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> فيه لخادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr></table>
+
+<p>الميزة الرئيسية لـ <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi> هي أن التطبيق يأتي مهيئًا مسبقًا. وبالتالي، فإن <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> و <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> و <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> مهيأة بالفعل للعمل معًا. عند تشغيل <em><bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi></em> عبر الاختصار الموجود في قائمة البرامج، يظهر رمز في الزاوية اليمنى السفلية من الشاشة.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015400000048716652DD.png" width="340" height="72" style="display:inline-block; margin:4px;width:8.996cm;height:1.905cm;" class="odt-zoomable" data-zoom-src="images/100000000000015400000048716652DD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000890000001D341042E0.png" width="137" height="29" style="display:inline-block; margin:4px;width:3.625cm;height:0.767cm;" class="odt-zoomable" data-zoom-src="images/10000000000000890000001D341042E0.png" /></td></tr></table>
+
+<p>وهو عبارة عن حرف <bdi dir="ltr" class="odt-ltr-term">E</bdi> مع نقطة حمراء، والتي يجب أن تومض إذا كان خادم الويب <em><bdi dir="ltr" class="odt-ltr-term">Apache</bdi></em> وقاعدة بيانات <em><bdi dir="ltr" class="odt-ltr-term">MySQL</bdi></em> قيد التشغيل. عند النقر بزر الماوس الأيمن عليه، يمكنك الوصول إلى خيارات القائمة:</p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p>يتيح لك خيار <em>الإدارة</em> تكوين الإعدادات وإجراء اختبارات الوظائف:</p>
+<p><img src="images/10000000000002DF0000016D6CB044FE.png" width="680" height="338" style="width:17.992cm;height:8.936cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF0000016D6CB044FE.png" /></p>
+<p><a id="toc14772374"></a></p>
+<h4 id="8131-php">8.1.3.1. <span style="color: #4f81bd">إدارة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></span></h4>
+<p>يجب أن يسمح لك زر <strong>&quot;معلومات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></strong>&quot; بالتحقق من أن تركيبة <bdi dir="ltr" class="odt-ltr-term">Apache-PHP</bdi> تعمل بشكل صحيح: يجب أن تظهر صفحة معلومات <bdi dir="ltr" class="odt-ltr-term">PHP:</bdi></p>
+<p><img src="images/10000000000002DF000001573392C759.png" width="680" height="317" style="width:17.992cm;height:8.396cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF000001573392C759.png" /></p>
+<p>يعرض زر &quot;<strong>الملحقات</strong>&quot; قائمة بملحقات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المثبتة. هذه الملحقات هي في الواقع مكتبات وظائف.</p>
+<p><img src="images/1000000000000189000000DF999A8FC1.png" width="393" height="223" style="width:10.398cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000189000000DF999A8FC1.png" /></p>
+<p>تُظهر الشاشة أعلاه، على سبيل المثال، أن الوظائف المطلوبة لاستخدام قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> موجودة.</p>
+<p>يعرض زر &quot;<strong>الإعدادات</strong>&quot; <em>اسم المستخدم وكلمة المرور</em> لمسؤول قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL.</bdi></p>
+<p><img src="images/100000000000012E0000004DC39428BD.png" width="302" height="77" style="width:7.99cm;height:2.037cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012E0000004DC39428BD.png" /></p>
+<p>يتجاوز استخدام قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> نطاق هذه النظرة العامة السريعة، ولكن من الواضح هنا أنه يجب تعيين كلمة مرور لمسؤول قاعدة البيانات. </p>
+<p><a id="toc14772375"></a></p>
+<h4 id="8132-apache">8.1.3.2. <span style="color: #4f81bd">إدارة <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></span></h4>
+<p>لا تزال في صفحة إدارة <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>، يتيح لك الرابط &quot;<strong><bdi dir="ltr" class="odt-ltr-term">Your Aliases</bdi>&quot;</strong> (أسماءك المستعارة) تعريف أسماء مستعارة مرتبطة بدليل ما. وهذا يسمح لك بوضع صفحات الويب خارج دليل www في شجرة أدلة <bdi dir="ltr" class="odt-ltr-term">EasyPHP.</bdi></p>
+<p><img src="images/10000000000002D10000010047855AB1.png" width="680" height="241" style="width:17.992cm;height:6.389cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D10000010047855AB1.png" /></p>
+<p>إذا أدخلت المعلومات التالية في الصفحة أعلاه:</p>
+<p><img src="images/10000000000001F70000005F1EE8B944.png" width="503" height="95" style="width:13.309cm;height:2.514cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F70000005F1EE8B944.png" /></p>
+<p>ونقرت على زر <em>&quot;التحقق من الصحة&quot;</em>، تُضاف الأسطر التالية إلى ملف <em>&lt;<bdi dir="ltr" class="odt-ltr-term">easyphp</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">apache</bdi>\<bdi dir="ltr" class="odt-ltr-term">conf</bdi>\<bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>    <span class="n">Alias</span> <span class="o">/</span><span class="n">st</span><span class="o">/</span> <span class="s2">&quot;e:/data/serge/web/&quot;</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;e:/data/serge/web&quot;</span><span class="o">&gt;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>        <span class="n">Options</span> <span class="n">FollowSymLinks</span> <span class="n">Indexes</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>        <span class="n">AllowOverride</span> <span class="kc">None</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>        <span class="n">Order</span> <span class="n">deny</span><span class="p">,</span><span class="n">allow</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>        <span class="n">allow</span> <span class="kn">from</span><span class="w"> </span><span class="mf">127.0.0.1</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>        <span class="n">deny</span> <span class="kn">from</span><span class="w"> </span><span class="nn">all</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>    <span class="o">&lt;/</span><span class="n">Directory</span><span class="o">&gt;</span>
+</code></pre></div>
+<p>يشير <em>&lt;<bdi dir="ltr" class="odt-ltr-term">easyphp</bdi>&gt;</em> إلى دليل تثبيت <bdi dir="ltr" class="odt-ltr-term">EasyPHP.</bdi> <em><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em> هو ملف تكوين خادم <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi> يمكنك بالتالي تحقيق نفس النتيجة عن طريق تعديل هذا الملف مباشرة. عادةً ما يتم تطبيق التغييرات على ملف <em><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em> على الفور بواسطة <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi> إذا لم يكن الأمر كذلك، فستحتاج إلى إيقاف الخادم وإعادة تشغيله، باستخدام أيقونة <bdi dir="ltr" class="odt-ltr-term">EasyPHP:</bdi> </p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p>لإكمال مثالنا، يمكننا الآن وضع صفحات الويب في شجرة الدليل <em><bdi dir="ltr" class="odt-ltr-term">e:</bdi>\<bdi dir="ltr" class="odt-ltr-term">data</bdi>\<bdi dir="ltr" class="odt-ltr-term">serge</bdi>\web</em>: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>C:\winnt\system32&gt;dir e:\data\serge\web\html\balises.htm
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>14/07/2002  17:02                3 767 balises.htm
+</code></pre></div>
+<p>وطلب هذه الصفحة باستخدام الاسم المستعار <strong>st</strong>:</p>
+<p><img src="images/100000000000018800000127CABE7D97.png" width="392" height="295" style="width:10.372cm;height:7.805cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018800000127CABE7D97.png" /></p>
+<p>في هذا المثال، تم تكوين خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> ليعمل على المنفذ 81. المنفذ الافتراضي له هو 80. يتم التحكم في هذا من خلال السطر التالي في ملف <em><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em> الذي رأيناه سابقًا:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Port 81
+</code></pre></div>
+<p><a id="toc14772376"></a></p>
+<h4 id="8133-apache-htpdconf">8.1.3.3. <span style="color: #4f81bd">ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Apache htpd.conf</bdi></span></h4>
+<p>عندما تريد ضبط <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> بدقة، عليك تعديل ملف التكوين <em><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em> يدويًا، الموجود هنا في المجلد <em>&lt;<bdi dir="ltr" class="odt-ltr-term">easyphp</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">apache</bdi>\<bdi dir="ltr" class="odt-ltr-term">conf</bdi></em>:</p>
+<p><img src="images/100000000000014E000000E6ACD5247E.png" width="334" height="230" style="width:8.837cm;height:6.085cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014E000000E6ACD5247E.png" /></p>
+<p>فيما يلي بعض النقاط الرئيسية التي يجب ملاحظتها في ملف التكوين هذا:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>السطر (السطور)
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الدور</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>ServerRoot &quot;D:/Program Files/Apache Group/Apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يحدد المجلد الذي يحتوي على بنية دليل <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>المنفذ 80
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يحدد المنفذ الذي سيستخدمه خادم الويب. عادةً ما يكون هذا هو 80. من خلال تغيير هذا السطر، يمكنك تشغيل خادم الويب على منفذ مختلف</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>ServerAdmin root@istia.univ-angers.fr
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان البريد الإلكتروني لمسؤول خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ServerName stahe.istia.uang
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">اسم الجهاز الذي يعمل عليه خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>ServerRoot &quot;E:/Program Files/EasyPHP/apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">دليل تثبيت خادم <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi> عندما تظهر أسماء الملفات النسبية في ملف التكوين، فإنها تكون نسبية بالنسبة لهذا الدليل.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>DocumentRoot &quot;E:/Program Files/EasyPHP/www&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الدليل الجذري لشجرة صفحات الويب التي يقدمها الخادم. هنا، سيتوافق عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><i> <bdi dir="ltr" class="odt-ltr-term">http://machine/rep1/fic1.html</bdi> </i>مع الملف <i><bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>\www\<bdi dir="ltr" class="odt-ltr-term">rep1</bdi>\<bdi dir="ltr" class="odt-ltr-term">fic1.html</bdi></i></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>&lt;Directory &quot;E:/Program Files/EasyPHP/www&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يحدد خصائص المجلد السابق</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>ErrorLog logs/error.log
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مجلد <bdi dir="ltr" class="odt-ltr-term">logs</bdi>، وبالتالي <i>&lt;<bdi dir="ltr" class="odt-ltr-term">ServerRoot</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">logs</bdi>\<bdi dir="ltr" class="odt-ltr-term">error.log</bdi></i>: <i><bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>\<bdi dir="ltr" class="odt-ltr-term">apache</bdi>\<bdi dir="ltr" class="odt-ltr-term">logs</bdi>\<bdi dir="ltr" class="odt-ltr-term">error.log</bdi></i>. هذا هو الملف الذي يجب التحقق منه إذا لاحظت أن خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> لا يعمل.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>    ScriptAlias /cgi-bin/ &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">سيكون<i> <bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>\<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi> </i>هو جذر شجرة الدليل حيث يمكنك وضع نصوص <bdi dir="ltr" class="odt-ltr-term">CGI.</bdi> وبالتالي، سيكون عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><i> <bdi dir="ltr" class="odt-ltr-term">http://machine/cgi-bin/rep1/script1.pl</bdi> </i>هو عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لنص <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> <i><bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>\<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi>\<bdi dir="ltr" class="odt-ltr-term">rep1</bdi>\<bdi dir="ltr" class="odt-ltr-term">script1.pl</bdi></i>.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>&lt;Directory &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يحدد خصائص المجلد أعلاه</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>LoadModule php4_module &quot;E:/Program Files/EasyPHP/php/php4apache.dll&quot;
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>AddModule mod_php4.c
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">أسطر لتحميل الوحدات النمطية التي تسمح لـ <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> بالعمل مع <bdi dir="ltr" class="odt-ltr-term">PHP4.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>    AddType application/x-httpd-php .phtml .pwml .php3 .php4 .php .php2 .inc
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تعيين امتدادات الملفات ليتم التعامل معها كملفات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></div></td></tr></table>
+
+<p><a id="toc14772377"></a></p>
+<h4 id="8134-mysql-phpmyadmin">8.1.3.4. <span style="color: #4f81bd">إدارة <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> باستخدام <bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi></span></h4>
+<p>في صفحة إدارة <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi>، انقر على زر <strong><bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi></strong>: </p>
+<p><img src="images/100000000000032D0000015989006742.png" width="680" height="288" style="width:17.979cm;height:7.629cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000032D0000015989006742.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تعرض القائمة المنسدلة الموجودة أسفل <i>الصفحة الرئيسية </i>قواعد البيانات الحالية.</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008A000000A9290338B1.png" width="138" height="169" style="display:inline-block; margin:4px;width:3.651cm;height:4.471cm;" class="odt-zoomable" data-zoom-src="images/100000000000008A000000A9290338B1.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الرقم الموجود بين قوسين هو عدد الجداول. إذا حددت قاعدة بيانات، فسيتم عرض جداولها:</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000086000000EC977ACD13.png" width="134" height="236" style="display:inline-block; margin:4px;width:3.545cm;height:6.242cm;" class="odt-zoomable" data-zoom-src="images/1000000000000086000000EC977ACD13.png" /></td></tr></table>
+
+<p>تقدم صفحة الويب عددًا من العمليات على قاعدة البيانات:</p>
+<p><img src="images/10000000000002B50000010B3AC00C67.png" width="680" height="262" style="width:17.992cm;height:6.932cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002B50000010B3AC00C67.png" /></p>
+<p>إذا نقرت على رابط &quot;<em>عرض المستخدم&quot;</em>:</p>
+<p><img src="images/100000000000021A0000011EC1D790F4.png" width="538" height="286" style="width:14.235cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021A0000011EC1D790F4.png" /></p>
+<p>لا يوجد سوى مستخدم واحد هنا: <bdi dir="ltr" class="odt-ltr-term">root</bdi>، وهو مسؤول <bdi dir="ltr" class="odt-ltr-term">MySQL.</bdi> من خلال النقر على رابط <em>&quot;تحرير</em>&quot;، يمكنك تغيير كلمة المرور الخاصة به، والتي هي فارغة حاليًا — وهي ممارسة غير موصى بها للمسؤول.</p>
+<p>لن نذكر المزيد عن <bdi dir="ltr" class="odt-ltr-term">phpMyAdmin</bdi>، وهو برنامج غني بالميزات يستحق مناقشة تمتد لعدة صفحات.</p>
+<p><a id="toc14772378"></a></p>
+<h3 id="814-php">8.1.4. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">PHP</bdi></span></h3>
+<p>لقد رأينا كيفية الحصول على <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من خلال تطبيق <bdi dir="ltr" class="odt-ltr-term">EasyPHP.</bdi> للحصول على <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> مباشرةً، انتقل إلى الموقع الإلكتروني <strong><bdi dir="ltr" class="odt-ltr-term">http://www.php.net.</bdi></strong></p>
+<p>لا يقتصر استخدام <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> على الويب. يمكنك استخدامه كلغة برمجة نصية على نظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> قم بإنشاء البرنامج النصي التالي واحفظه باسم <em><bdi dir="ltr" class="odt-ltr-term">date.php</bdi></em>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>&lt;?
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>  // script php affichant l&#39;heure
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>  $maintenant=date(&quot;j/m/y, H:i:s&quot;,time());
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>  echo &quot;Nous sommes le $maintenant&quot;;
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>?&gt;
+</code></pre></div>
+<p>في نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi>، انتقل إلى الدليل الذي يحتوي على ملف <bdi dir="ltr" class="odt-ltr-term">date.php</bdi> وقم بتشغيله<strong>:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>E:\data\serge\php\essais&gt;&quot;e:\program files\easyphp\php\php.exe&quot; date.php
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>X-Powered-By: PHP/4.2.0
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>Content-type: text/html
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>Nous sommes le 18/07/02, 09:31:01
+</code></pre></div>
+<p><a id="toc14772379"></a></p>
+<h3 id="815-perl">8.1.5. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">PERL</bdi></span></h3>
+<p>من الأفضل أن يكون <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> مثبتًا بالفعل. إذا كان موجودًا، فسيقوم <bdi dir="ltr" class="odt-ltr-term">Active Perl</bdi> بتهيئته لقبول نصوص <bdi dir="ltr" class="odt-ltr-term">PERL</bdi> في صفحات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، وهي نصوص سيقوم <bdi dir="ltr" class="odt-ltr-term">IE</bdi> نفسه بتنفيذها على جانب العميل. يقع موقع <bdi dir="ltr" class="odt-ltr-term">Active Perl</bdi> على الرابط <bdi dir="ltr" class="odt-ltr-term">http://www.activestate.comA.</bdi> عند التثبيت، سيتم تثبيت <bdi dir="ltr" class="odt-ltr-term">PERL</bdi> في دليل سنسميه <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">perl</bdi>&gt;</strong>. ويحتوي هذا الدليل على بنية الدلائل التالية:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>DEISL1   ISU        32 403  23/06/00  17:16 DeIsL1.isu
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>BIN            &lt;REP&gt;        23/06/00  17:15 bin
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>LIB            &lt;REP&gt;        23/06/00  17:15 lib
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>HTML           &lt;REP&gt;        23/06/00  17:15 html
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>EG             &lt;REP&gt;        23/06/00  17:15 eg
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>SITE           &lt;REP&gt;        23/06/00  17:15 site
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>HTMLHELP       &lt;REP&gt;        28/06/00  18:37 htmlhelp
+</code></pre></div>
+<p>يوجد الملف القابل للتنفيذ <em><bdi dir="ltr" class="odt-ltr-term">perl.exe</bdi></em> في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">perl</bdi>&gt;\bin</strong>. <bdi dir="ltr" class="odt-ltr-term">Perl</bdi> هي لغة برمجة نصية تعمل على أنظمة <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> و<bdi dir="ltr" class="odt-ltr-term">Unix.</bdi> كما أنها تُستخدم في برمجة الويب. دعونا نكتب أول برنامج نصي لنا:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">script</span><span class="w"> </span><span class="nx">PERL</span><span class="w"> </span><span class="nx">affichant</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">heure</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="err">#</span><span class="w"> </span><span class="nx">modules</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="nx">use</span><span class="w"> </span><span class="nx">strict</span><span class="p">;</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="err">#</span><span class="w"> </span><span class="nx">programme</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="nx">my</span><span class="w"> </span><span class="p">(</span><span class="nx">$secondes</span><span class="p">,</span><span class="nx">$minutes</span><span class="p">,</span><span class="nx">$heure</span><span class="p">)</span><span class="o">=</span><span class="nx">localtime</span><span class="p">(</span><span class="nx">time</span><span class="p">);</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="nx">print</span><span class="w"> </span><span class="s2">&quot;Il est $heure:$minutes:$secondes\n&quot;</span><span class="p">;</span>
+</code></pre></div>
+<p>احفظ هذا البرنامج النصي في ملف <em>باسم <bdi dir="ltr" class="odt-ltr-term">heure</bdi></em>.<em>pl</em>. افتح نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi>، وانتقل إلى الدليل الذي يحتوي على البرنامج النصي، وقم بتشغيله:</p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">E:\data\serge\Perl\Essais&gt;e:\perl\bin\perl.exe heure.pl</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Il est 9:34:21<span style="font-style:italic"></span></span></span>
+</code></pre></div>
+
+<p><a id="toc14772380"></a></p>
+<h3 id="816-vbscript-javascript-perlscript">8.1.6. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>، <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>، <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi></span></h3>
+<p>هذه لغات برمجة نصية لنظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> يمكن تشغيلها في بيئات متنوعة مثل</p>
+<ul>
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi> </i>للاستخدام المباشر في <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، خاصة لكتابة نصوص برمجية لإدارة النظام
+  </li>
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi></i>. ثم يتم استخدامها داخل صفحات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، حيث تضيف مستوى من التفاعل لا يمكن تحقيقه باستخدام <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> وحده.
+  </li>
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Internet Information Server</bdi> </i>(<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>)، خادم الويب الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi> على <bdi dir="ltr" class="odt-ltr-term">NT/2000</bdi>، وما يعادله، <i><bdi dir="ltr" class="odt-ltr-term">Personal Web Server</bdi> </i>(<bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)، على <bdi dir="ltr" class="odt-ltr-term">Win9x.</bdi> في هذه الحالة، تُستخدم <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> لبرمجة الويب من جانب الخادم، وهي تقنية تسميها <bdi dir="ltr" class="odt-ltr-term">Microsoft ASP</bdi> (<i><bdi dir="ltr" class="odt-ltr-term">Active Server Pages</bdi></i>).
+  </li>
+</ul>
+
+<p>قم بتنزيل ملف التثبيت من الرابط: <em><bdi dir="ltr" class="odt-ltr-term">http://msdn.microsoft.com/scripting</bdi></em> واتبع روابط <em><bdi dir="ltr" class="odt-ltr-term">Windows Script</bdi></em>. يتم تثبيت ما يلي:</p>
+<ul>
+  <li>حاوية<i> <bdi dir="ltr" class="odt-ltr-term">Windows Scripting</bdi> </i><bdi dir="ltr" class="odt-ltr-term">Host</bdi>، التي تدعم لغات برمجة نصية متنوعة مثل <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>، بالإضافة إلى لغات أخرى مثل <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi>، المضمنة في <bdi dir="ltr" class="odt-ltr-term">Active Perl.</bdi>
+  </li>
+  <li>مترجم <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>
+  </li>
+  <li>مترجم <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>
+  </li>
+</ul>
+
+<p>دعونا نجري بعض الاختبارات السريعة. دعونا نبني برنامج <em><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi></em> التالي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1">&#39; a class</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kd">class</span><span class="w"> </span><span class="nc">personne</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">nom</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">age</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="k">End</span><span class="w"> </span><span class="k">class</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="c1">&#39; creation of a person object</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a><span class="k">Set</span><span class="w"> </span><span class="n">p1</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">personne</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a><span class="w">  </span><span class="p">.</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;dupont&quot;</span>
+<a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a><span class="w">  </span><span class="p">.</span><span class="n">age</span><span class="o">=</span><span class="mi">18</span>
+<a id="__codelineno-39-12" name="__codelineno-39-12" href="#__codelineno-39-12"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+<a id="__codelineno-39-13" name="__codelineno-39-13" href="#__codelineno-39-13"></a>
+<a id="__codelineno-39-14" name="__codelineno-39-14" href="#__codelineno-39-14"></a><span class="c1">&#39; display properties person p1</span>
+<a id="__codelineno-39-15" name="__codelineno-39-15" href="#__codelineno-39-15"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-39-16" name="__codelineno-39-16" href="#__codelineno-39-16"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;nom=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">nom</span>
+<a id="__codelineno-39-17" name="__codelineno-39-17" href="#__codelineno-39-17"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;age=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">age</span>
+<a id="__codelineno-39-18" name="__codelineno-39-18" href="#__codelineno-39-18"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+</code></pre></div>
+<p>يستخدم هذا البرنامج كائنات. لنسمه <em><bdi dir="ltr" class="odt-ltr-term">objects.vbs</bdi></em> (يشير الامتداد .vbs إلى ملف <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>). انتقل إلى الدليل الذي يوجد فيه الملف وقم بتشغيله:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>E:\data\serge\windowsScripting\vbscript\poly\objets&gt;cscript objets.vbs
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>nom=dupont
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>age=18
+</code></pre></div>
+<p>الآن دعونا نبني برنامج <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> التالي الذي يستخدم المصفوفات:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>// tableau dans un variant
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>// tableau vide
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>tableau=new Array();
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>affiche(tableau);
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>// tableau croît dynamiquement
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>for(i=0;i<span class="p">&lt;</span><span class="nt">3</span><span class="err">;</span><span class="na">i</span><span class="err">++){</span>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="err">}</span>
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="err">//</span> <span class="na">encore</span>
+<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">3;i&lt;6;i++){</span>
+<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a><span class="err">}</span>
+<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a>
+<a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a><span class="err">//</span> <span class="na">tableaux</span> <span class="na">à</span> <span class="na">plusieurs</span> <span class="na">dimensions</span>
+<a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a><span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">-----------------------------</span><span class="err">&quot;);</span>
+<a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a>
+<a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a><span class="na">tableau2</span><span class="o">=</span><span class="s">new</span> <span class="na">Array</span><span class="err">();</span>
+<a id="__codelineno-41-21" name="__codelineno-41-21" href="#__codelineno-41-21"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;3;i++){</span>
+<a id="__codelineno-41-22" name="__codelineno-41-22" href="#__codelineno-41-22"></a>  <span class="na">tableau2</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">new</span> <span class="na">Array</span><span class="err">());</span>
+<a id="__codelineno-41-23" name="__codelineno-41-23" href="#__codelineno-41-23"></a>  <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;4;j++){</span>
+<a id="__codelineno-41-24" name="__codelineno-41-24" href="#__codelineno-41-24"></a>    <span class="na">tableau2</span><span class="err">[</span><span class="na">i</span><span class="err">].</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">+</span><span class="na">j</span><span class="err">);</span>
+<a id="__codelineno-41-25" name="__codelineno-41-25" href="#__codelineno-41-25"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-41-26" name="__codelineno-41-26" href="#__codelineno-41-26"></a><span class="err">}//</span> <span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-41-27" name="__codelineno-41-27" href="#__codelineno-41-27"></a><span class="na">affiche2</span><span class="err">(</span><span class="na">tableau2</span><span class="err">);</span>
+<a id="__codelineno-41-28" name="__codelineno-41-28" href="#__codelineno-41-28"></a>
+<a id="__codelineno-41-29" name="__codelineno-41-29" href="#__codelineno-41-29"></a><span class="err">//</span> <span class="na">fin</span>
+<a id="__codelineno-41-30" name="__codelineno-41-30" href="#__codelineno-41-30"></a><span class="na">WScript</span><span class="err">.</span><span class="na">quit</span><span class="err">(</span><span class="na">0</span><span class="err">);</span>
+<a id="__codelineno-41-31" name="__codelineno-41-31" href="#__codelineno-41-31"></a>
+<a id="__codelineno-41-32" name="__codelineno-41-32" href="#__codelineno-41-32"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-41-33" name="__codelineno-41-33" href="#__codelineno-41-33"></a><span class="na">function</span> <span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-41-34" name="__codelineno-41-34" href="#__codelineno-41-34"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-41-35" name="__codelineno-41-35" href="#__codelineno-41-35"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-41-36" name="__codelineno-41-36" href="#__codelineno-41-36"></a>    <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">]);</span>
+<a id="__codelineno-41-37" name="__codelineno-41-37" href="#__codelineno-41-37"></a>  <span class="err">}//</span><span class="na">for</span>
+<a id="__codelineno-41-38" name="__codelineno-41-38" href="#__codelineno-41-38"></a><span class="err">}//</span><span class="na">function</span>
+<a id="__codelineno-41-39" name="__codelineno-41-39" href="#__codelineno-41-39"></a>
+<a id="__codelineno-41-40" name="__codelineno-41-40" href="#__codelineno-41-40"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-41-41" name="__codelineno-41-41" href="#__codelineno-41-41"></a><span class="na">function</span> <span class="na">affiche2</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-41-42" name="__codelineno-41-42" href="#__codelineno-41-42"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-41-43" name="__codelineno-41-43" href="#__codelineno-41-43"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-41-44" name="__codelineno-41-44" href="#__codelineno-41-44"></a>    <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;tableau[i].length;j++){</span>
+<a id="__codelineno-41-45" name="__codelineno-41-45" href="#__codelineno-41-45"></a>      <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;,&quot;</span> <span class="err">+</span> <span class="na">j</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">][</span><span class="na">j</span><span class="err">]);</span>
+<a id="__codelineno-41-46" name="__codelineno-41-46" href="#__codelineno-41-46"></a>    <span class="err">}//</span> <span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-41-47" name="__codelineno-41-47" href="#__codelineno-41-47"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-41-48" name="__codelineno-41-48" href="#__codelineno-41-48"></a><span class="err">}//</span><span class="na">function</span>
+</code></pre></div>
+<p>يستخدم هذا البرنامج المصفوفات. لنسمه <em><bdi dir="ltr" class="odt-ltr-term">arrays.js</bdi></em> (تشير اللاحقة .js إلى ملف <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>). انتقل إلى الدليل الذي يوجد فيه وقم بتشغيله:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>E:\data\serge\windowsScripting\javascript\poly\tableaux&gt;cscript tableaux.js
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>tableau[0]=0
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>tableau[1]=10
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>tableau[2]=20
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>tableau[0]=0
+<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>tableau[1]=10
+<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>tableau[2]=20
+<a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>tableau[3]=30
+<a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>tableau[4]=40
+<a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>tableau[5]=50
+<a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>-----------------------------
+<a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>tableau[0,0]=0
+<a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>tableau[0,1]=1
+<a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>tableau[0,2]=2
+<a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a>tableau[0,3]=3
+<a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a>tableau[1,0]=10
+<a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a>tableau[1,1]=11
+<a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a>tableau[1,2]=12
+<a id="__codelineno-42-22" name="__codelineno-42-22" href="#__codelineno-42-22"></a>tableau[1,3]=13
+<a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a>tableau[2,0]=20
+<a id="__codelineno-42-24" name="__codelineno-42-24" href="#__codelineno-42-24"></a>tableau[2,1]=21
+<a id="__codelineno-42-25" name="__codelineno-42-25" href="#__codelineno-42-25"></a>tableau[2,2]=22
+<a id="__codelineno-42-26" name="__codelineno-42-26" href="#__codelineno-42-26"></a>tableau[2,3]=23
+</code></pre></div>
+<p>مثال أخير في <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> لنختتم به. يجب أن يكون <bdi dir="ltr" class="odt-ltr-term">Active Perl</bdi> مثبتًا لديك للوصول إلى <bdi dir="ltr" class="odt-ltr-term">PerlScript.</bdi></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>&lt;job id=&quot;PERL1&quot;&gt;
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>  &lt;script language=&quot;PerlScript&quot;&gt;
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>      # du Perl classique
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>    %dico=(&quot;maurice&quot;=&gt;&quot;juliette&quot;,&quot;philippe&quot;=&gt;&quot;marianne&quot;);
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>    <span class="ni">@cles</span>= keys %dico;
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>    for ($i=0;$i&lt;=$#cles;$i++){
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>        $cle=$cles[$i];
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>      $valeur=$dico{$cle};
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>        $WScript-&gt;echo (&quot;clé=&quot;.$cle.&quot;, valeur=&quot;.$valeur);
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>    }
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>    # du perlscript utilisant les objets Windows Script
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>    $dico=$WScript-&gt;CreateObject(&quot;Scripting.Dictionary&quot;);
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>    $dico-&gt;add(&quot;maurice&quot;,&quot;juliette&quot;);
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a>    $dico-&gt;add(&quot;philippe&quot;,&quot;marianne&quot;);
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;maurice&quot;));
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;philippe&quot;));    
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a>  &lt;/script&gt;
+<a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a>&lt;/job&gt;
+</code></pre></div>
+<p>يوضح هذا البرنامج كيفية إنشاء واستخدام قاموسين: أحدهما بنمط <bdi dir="ltr" class="odt-ltr-term">Perl</bdi> الكلاسيكي، والآخر باستخدام كائن <bdi dir="ltr" class="odt-ltr-term">Windows Script</bdi> <em><bdi dir="ltr" class="odt-ltr-term">Scripting Dictionary</bdi></em>. لنحفظ هذا الكود في الملف <em><bdi dir="ltr" class="odt-ltr-term">dico.wsf</bdi></em> (wsf هي امتداد ملفات <bdi dir="ltr" class="odt-ltr-term">Windows Script</bdi>). انتقل إلى مجلد البرنامج وقم بتشغيله:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>E:\data\serge\windowsScripting\perlscript\essais&gt;cscript dico.wsf
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>clé=philippe, valeur=marianne
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>clé=maurice, valeur=juliette
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>juliette
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>marianne
+</code></pre></div>
+<p>يمكن لـ <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> استخدام كائنات من الحاوية التي يعمل فيها. هنا، كانت هذه كائنات من حاوية <bdi dir="ltr" class="odt-ltr-term">Windows Script.</bdi> في سياق برمجة الويب، يمكن تنفيذ نصوص <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> إما داخل متصفح <bdi dir="ltr" class="odt-ltr-term">IE</bdi> أو على خادم <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> أو <bdi dir="ltr" class="odt-ltr-term">IIS.</bdi> إذا كان النص البرمجي معقدًا إلى حد ما، فقد يكون من الحكمة اختباره خارج سياق الويب، داخل حاوية <bdi dir="ltr" class="odt-ltr-term">Windows Script</bdi> كما رأينا سابقًا. بهذه الطريقة، يمكنك فقط اختبار وظائف البرنامج النصي التي لا تستخدم كائنات خاصة بالمتصفح أو الخادم. حتى مع هذا القيد، تظل هذه الخيار مفيدًا لأنه من غير العملي عمومًا تصحيح أخطاء البرامج النصية التي تعمل داخل خوادم الويب أو المتصفحات.</p>
+<p><a id="toc14772381"></a></p>
+<h3 id="817-java">8.1.7. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">JAVA</bdi></span></h3>
+<p>تتوفر <bdi dir="ltr" class="odt-ltr-term">Java</bdi> على الرابط: <strong><bdi dir="ltr" class="odt-ltr-term">http://www.sun.com</bdi></strong> (انظر بداية هذا المستند) ويتم تثبيتها في بنية دليل تسمى <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">java</bdi>&gt;</strong> تحتوي على العناصر التالية:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>22/05/2002  05:51       &lt;DIR&gt;          .
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>22/05/2002  05:51       &lt;DIR&gt;          ..
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>22/05/2002  05:51       &lt;DIR&gt;          bin
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>22/05/2002  05:51       &lt;DIR&gt;          jre
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>07/02/2002  12:52                8 277 README.txt
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>07/02/2002  12:52               13 853 LICENSE
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>07/02/2002  12:52                4 516 COPYRIGHT
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>07/02/2002  12:52               15 290 readme.html
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>22/05/2002  05:51       &lt;DIR&gt;          lib
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>22/05/2002  05:51       &lt;DIR&gt;          include
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>22/05/2002  05:51       &lt;DIR&gt;          demo
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>07/02/2002  12:52           10 377 848 src.zip
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>11/02/2002  12:55       &lt;DIR&gt;          docs
+</code></pre></div>
+<p>في <strong>دليل</strong> bin، ستجد <strong><bdi dir="ltr" class="odt-ltr-term">javac.exe</bdi></strong>، وهو مُركب <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، و <strong><bdi dir="ltr" class="odt-ltr-term">java.exe</bdi>،</strong> وهي آلة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الافتراضية. يمكنك إجراء الاختبارات التالية:</p>
+<ol>
+  <li>اكتب البرنامج النصي التالي:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="c1">//java program displaying the time</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>
+<a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">heure</span><span class="p">{</span>
+<a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">arg</span><span class="o">[]</span><span class="p">){</span>
+<a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a><span class="w">     </span><span class="c1">// retrieve date &amp; time</span>
+<a id="__codelineno-46-9" name="__codelineno-46-9" href="#__codelineno-46-9"></a><span class="w">     </span><span class="n">Date</span><span class="w"> </span><span class="n">maintenant</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Date</span><span class="p">();</span>
+<a id="__codelineno-46-10" name="__codelineno-46-10" href="#__codelineno-46-10"></a><span class="w">      </span><span class="c1">// we display</span>
+<a id="__codelineno-46-11" name="__codelineno-46-11" href="#__codelineno-46-11"></a><span class="w">     </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Il est &quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getHours</span><span class="p">()</span><span class="o">+</span>
+<a id="__codelineno-46-12" name="__codelineno-46-12" href="#__codelineno-46-12"></a><span class="w">        </span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getMinutes</span><span class="p">()</span><span class="o">+</span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getSeconds</span><span class="p">());</span>
+<a id="__codelineno-46-13" name="__codelineno-46-13" href="#__codelineno-46-13"></a><span class="w">  </span><span class="p">}</span><span class="c1">//hand</span>
+<a id="__codelineno-46-14" name="__codelineno-46-14" href="#__codelineno-46-14"></a><span class="p">}</span><span class="c1">//class</span>
+</code></pre></div>
+<ol>
+  <li>احفظ هذا البرنامج باسم <i><bdi dir="ltr" class="odt-ltr-term">heure.java</bdi></i>. افتح نافذة <bdi dir="ltr" class="odt-ltr-term">DOS.</bdi> انتقل إلى الدليل الذي يحتوي على ملف<i> <bdi dir="ltr" class="odt-ltr-term">heure.java</bdi> </i>وقم بتجميعه:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>D:\data\java\essais&gt;c:\jdk1.3\bin\javac heure.java
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>Note: heure.java uses or overrides a deprecated API.
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>Note: Recompile with -deprecation for details.
+</code></pre></div>
+<p>في الأمر أعلاه، يجب استبدال <bdi dir="ltr" class="odt-ltr-term">c:</bdi>\<bdi dir="ltr" class="odt-ltr-term">jdk1.3</bdi>\bin\<bdi dir="ltr" class="odt-ltr-term">javac</bdi> بالمسار الدقيق لمترجم <em><bdi dir="ltr" class="odt-ltr-term">javac.exe</bdi></em>. يجب أن يكون لديك الآن ملف باسم <em><bdi dir="ltr" class="odt-ltr-term">heure.class</bdi></em> في نفس الدليل الذي يوجد <em>فيه <bdi dir="ltr" class="odt-ltr-term">heure.</bdi></em><bdi dir="ltr" class="odt-ltr-term">java</bdi>؛ وهذا هو البرنامج الذي سيتم تنفيذه الآن بواسطة الآلة الافتراضية <em><bdi dir="ltr" class="odt-ltr-term">java.exe</bdi></em>.</p>
+<ol>
+  <li>قم بتشغيل البرنامج:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>D:\data\java\essais&gt;c:\jdk1.3\bin\java heure
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>Il est 10:44:2
+</code></pre></div>
+<p><a id="toc14772382"></a></p>
+<h3 id="818-apache">8.1.8. <span style="color: #4f81bd">خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></span></h3>
+<p>لقد رأينا أنه يمكن الحصول على خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> من خلال تطبيق <bdi dir="ltr" class="odt-ltr-term">EasyPHP.</bdi> للحصول عليه مباشرة، انتقل إلى موقع <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> على الويب: <strong><bdi dir="ltr" class="odt-ltr-term">http://www.apache.org.</bdi></strong> يؤدي التثبيت إلى إنشاء بنية مجلدات تحتوي على جميع الملفات اللازمة للخادم. لنسمي هذا المجلد <strong><em>&lt;<bdi dir="ltr" class="odt-ltr-term">apache</bdi>&gt;</em></strong>. وهو يحتوي على بنية مجلدات مشابهة لما يلي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>UNINST   ISU       118 805  23/06/00  17:09 Uninst.isu
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>HTDOCS         &lt;REP&gt;        23/06/00  17:09 htdocs
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>APACHE~1 DLL       299 008  25/02/00  21:11 ApacheCore.dll
+<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>ANNOUN~1             3 000  23/02/00  16:51 Announcement
+<a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>ABOUT_~1            13 197  31/03/99  18:42 ABOUT_APACHE
+<a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a>APACHE   EXE        20 480  25/02/00  21:04 Apache.exe
+<a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>KEYS                36 437  20/08/99  11:57 KEYS
+<a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a>LICENSE              2 907  01/01/99  13:04 LICENSE
+<a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a>MAKEFI~1 TMP        27 370  11/01/00  13:47 Makefile.tmpl
+<a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a>README               2 109  01/04/98   6:59 README
+<a id="__codelineno-49-11" name="__codelineno-49-11" href="#__codelineno-49-11"></a>README   NT          3 223  19/03/99   9:55 README.NT
+<a id="__codelineno-49-12" name="__codelineno-49-12" href="#__codelineno-49-12"></a>WARNIN~1 TXT           339  21/09/98  13:09 WARNING-NT.TXT
+<a id="__codelineno-49-13" name="__codelineno-49-13" href="#__codelineno-49-13"></a>BIN            &lt;REP&gt;        23/06/00  17:09 bin
+<a id="__codelineno-49-14" name="__codelineno-49-14" href="#__codelineno-49-14"></a>MODULES        &lt;REP&gt;        23/06/00  17:09 modules
+<a id="__codelineno-49-15" name="__codelineno-49-15" href="#__codelineno-49-15"></a>ICONS          &lt;REP&gt;        23/06/00  17:09 icons
+<a id="__codelineno-49-16" name="__codelineno-49-16" href="#__codelineno-49-16"></a>LOGS           &lt;REP&gt;        23/06/00  17:09 logs
+<a id="__codelineno-49-17" name="__codelineno-49-17" href="#__codelineno-49-17"></a>CONF           &lt;REP&gt;        23/06/00  17:09 conf
+<a id="__codelineno-49-18" name="__codelineno-49-18" href="#__codelineno-49-18"></a>CGI-BIN        &lt;REP&gt;        23/06/00  17:09 cgi-bin
+<a id="__codelineno-49-19" name="__codelineno-49-19" href="#__codelineno-49-19"></a>PROXY          &lt;REP&gt;        23/06/00  17:09 proxy
+<a id="__codelineno-49-20" name="__codelineno-49-20" href="#__codelineno-49-20"></a>INSTALL  LOG         3 779  23/06/00  17:09 install.log
+</code></pre></div>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>conf
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">دليل ملفات تكوين <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>السجلات
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">دليل ملفات سجلات <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (المراقبة)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">ملفات <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> القابلة للتنفيذ</div></td></tr></table>
+
+<p><a id="toc14772383"></a></p>
+<h4 id="8181">8.1.8.1. <span style="color: #4f81bd">التكوين</span></h4>
+<p>في دليل <strong><em>&lt;<bdi dir="ltr" class="odt-ltr-term">Apache</bdi>&gt;\</em></strong><bdi dir="ltr" class="odt-ltr-term">conf</bdi>، ستجد الملفات التالية: <em><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi>، <bdi dir="ltr" class="odt-ltr-term">srm.conf</bdi>، <bdi dir="ltr" class="odt-ltr-term">access.conf</bdi></em>. في أحدث إصدارات <bdi dir="ltr" class="odt-ltr-term">Apache</bdi>، تم دمج هذه الملفات الثلاثة في <em>ملف <bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></em>. وقد تناولنا بالفعل النقاط الرئيسية لهذا الملف التكويني. في الأمثلة التالية، تم استخدام إصدار <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> من <bdi dir="ltr" class="odt-ltr-term">EasyPHP</bdi> للاختبار، وبالتالي ملف التكوين الخاص به. في هذا الملف، <em><bdi dir="ltr" class="odt-ltr-term">DocumentRoot</bdi>،</em> الذي يحدد جذر شجرة دليل صفحات الويب، هو <em><bdi dir="ltr" class="odt-ltr-term">e:</bdi>\<bdi dir="ltr" class="odt-ltr-term">program files</bdi>\<bdi dir="ltr" class="odt-ltr-term">easyphp</bdi>\www</em>.</p>
+<p><a id="toc14772384"></a></p>
+<h4 id="8182-php-apache">8.1.8.2. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">PHP</bdi> - رابط <bdi dir="ltr" class="odt-ltr-term">Apache</bdi></span></h4>
+<p>لإجراء الاختبار، قم بإنشاء الملف <strong><bdi dir="ltr" class="odt-ltr-term">intro.php</bdi></strong> بالسطر الوحيد التالي:</p>
+<p><strong>&lt;? <bdi dir="ltr" class="odt-ltr-term">phpinfo</bdi>() ?&gt;</strong></p>
+<p>وضعه في جذر صفحات الويب لخادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<em><bdi dir="ltr" class="odt-ltr-term">DocumentRoot</bdi></em> أعلاه). اطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost/intro.php</bdi></strong>. يجب أن ترى قائمة بمعلومات <em><bdi dir="ltr" class="odt-ltr-term">PHP</bdi></em>:</p>
+<p><img src="images/100000000000028900000172D6AA302A.png" width="649" height="370" style="width:17.171cm;height:9.79cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028900000172D6AA302A.png" /></p>
+<p>يعرض البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> التالي الوقت. لقد رأيناه من قبل:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>&lt;?
+<a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>  // time : nb de millisecondes depuis 01/01/1970
+<a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>  // &quot;format affichage date-heure
+<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>  // d: jour sur 2 chiffres
+<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>  // m: mois sur 2 chiffres
+<a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>  // y : année sur 2 chiffres
+<a id="__codelineno-53-7" name="__codelineno-53-7" href="#__codelineno-53-7"></a>  // H : heure 0,23
+<a id="__codelineno-53-8" name="__codelineno-53-8" href="#__codelineno-53-8"></a>  // i : minutes
+<a id="__codelineno-53-9" name="__codelineno-53-9" href="#__codelineno-53-9"></a>  // s: secondes
+<a id="__codelineno-53-10" name="__codelineno-53-10" href="#__codelineno-53-10"></a>  print &quot;Nous sommes le &quot; . date(&quot;d/m/y H:i:s&quot;,time());
+<a id="__codelineno-53-11" name="__codelineno-53-11" href="#__codelineno-53-11"></a>?&gt;
+</code></pre></div>
+<p>ضع هذا الملف النصي في الدليل الجذري لخادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<em><bdi dir="ltr" class="odt-ltr-term">DocumentRoot</bdi></em>) واسمه <bdi dir="ltr" class="odt-ltr-term">date</bdi><em>.php</em>. افتح متصفحًا وأدخل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost/date.php</bdi></strong>. سترى الصفحة التالية:</p>
+<p><img src="images/10000000000000FF0000004C3C348E29.png" width="255" height="76" style="width:6.747cm;height:2.011cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FF0000004C3C348E29.png" /></p>
+<p><a id="toc14772385"></a></p>
+<h4 id="8183-perl-apache">8.1.8.3. <span style="color: #4f81bd">رابط <bdi dir="ltr" class="odt-ltr-term">PERL-APACHE</bdi></span></h4>
+<p>يتم تحقيق ذلك باستخدام سطر بالصيغة: <em><bdi dir="ltr" class="odt-ltr-term">ScriptAlias</bdi> /<bdi dir="ltr" class="odt-ltr-term">cgi-bin/</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">E:/Program Files/EasyPHP/cgi-bin/</bdi>&quot;</em> في الملف <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">apache</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">conf</bdi>\<bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></strong>. وصيغته هي     <strong><mark style="background-color: #ffff00"><bdi dir="ltr" class="odt-ltr-term">ScriptAlias</bdi> /<bdi dir="ltr" class="odt-ltr-term">cgi-bin/</bdi> &quot;&lt;<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi>&gt;&quot; </mark></strong>حيث <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi>&gt;</strong> هو المجلد الذي يمكن وضع نصوص <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> فيه. <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> (واجهة البوابة المشتركة) هو معيار للاتصال بين خادم الويب والتطبيقات. يطلب العميل صفحة ديناميكية من خادم الويب، أي صفحة تم إنشاؤها بواسطة برنامج. لذلك يجب على خادم الويب توجيه برنامج لإنشاء الصفحة. يحدد <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> التفاعل بين الخادم والبرنامج، وتحديدًا كيفية نقل المعلومات بين هذين الكيانين.</p>
+<p>إذا لزم الأمر، قم بتعديل السطر <em><code>ScriptAlias /cgi-bin/ &amp;quot;&amp;lt;cgi-bin&amp;gt;&amp;quot;</code></em> وأعد تشغيل خادم <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi> ثم قم بإجراء الاختبار التالي:</p>
+<ol>
+  <li>اكتب البرنامج النصي:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>#!c:\perl\bin\perl.exe
+<a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>
+<a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a># script PERL affichant l&#39;heure
+<a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>
+<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a># modules
+<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a>use strict;
+<a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a>
+<a id="__codelineno-54-8" name="__codelineno-54-8" href="#__codelineno-54-8"></a># programme
+<a id="__codelineno-54-9" name="__codelineno-54-9" href="#__codelineno-54-9"></a>my ($secondes,$minutes,$heure)=localtime(time);
+<a id="__codelineno-54-10" name="__codelineno-54-10" href="#__codelineno-54-10"></a>print <span class="err">&lt;</span><span class="p">&lt;</span><span class="nt">FINHTML</span>
+<a id="__codelineno-54-11" name="__codelineno-54-11" href="#__codelineno-54-11"></a><span class="na">Content-Type:</span> <span class="na">text</span><span class="err">/</span><span class="na">html</span>
+<a id="__codelineno-54-12" name="__codelineno-54-12" href="#__codelineno-54-12"></a>
+<a id="__codelineno-54-13" name="__codelineno-54-13" href="#__codelineno-54-13"></a><span class="err">&lt;</span><span class="na">html</span><span class="p">&gt;</span>
+<a id="__codelineno-54-14" name="__codelineno-54-14" href="#__codelineno-54-14"></a> <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-54-15" name="__codelineno-54-15" href="#__codelineno-54-15"></a>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>heure<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-54-16" name="__codelineno-54-16" href="#__codelineno-54-16"></a> <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-54-17" name="__codelineno-54-17" href="#__codelineno-54-17"></a> <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-54-18" name="__codelineno-54-18" href="#__codelineno-54-18"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Il est $heure:$minutes:$secondes<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-54-19" name="__codelineno-54-19" href="#__codelineno-54-19"></a> <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-54-20" name="__codelineno-54-20" href="#__codelineno-54-20"></a>FINHTML
+<a id="__codelineno-54-21" name="__codelineno-54-21" href="#__codelineno-54-21"></a>;
+</code></pre></div>
+<ol>
+  <li>ضع هذا البرنامج النصي في <i>&lt;<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">heure.</bdi></i>pl، حيث <i>&lt;<bdi dir="ltr" class="odt-ltr-term">cgi-bin</bdi>&gt; </i>هو الدليل الذي يمكنه استقبال البرامج النصية <bdi dir="ltr" class="odt-ltr-term">CGI</bdi> (انظر <i><bdi dir="ltr" class="odt-ltr-term">httpd.conf</bdi></i>). السطر الأول <i>#!<bdi dir="ltr" class="odt-ltr-term">c:</bdi>\<bdi dir="ltr" class="odt-ltr-term">perl</bdi>\bin\<bdi dir="ltr" class="odt-ltr-term">perl.exe</bdi> </i>يحدد المسار إلى <i>الملف </i>القابل للتنفيذ<i> <bdi dir="ltr" class="odt-ltr-term">perl.exe</bdi></i>. قم بتعديله إذا لزم الأمر.
+  </li>
+  <li>ابدأ تشغيل <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> إذا لم تكن قد قمت بذلك بعد
+  </li>
+  <li>اطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><i> <bdi dir="ltr" class="odt-ltr-term">http://localhost/cgi-bin/heure.pl</bdi> </i>في متصفح. سترى الصفحة التالية:
+  </li>
+</ol>
+
+<p><img src="images/10000000000000E90000005AE3481F09.png" width="233" height="90" style="width:6.165cm;height:2.381cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E90000005AE3481F09.png" /></p>
+<p><a id="toc14772386"></a></p>
+<h3 id="819-pws">8.1.9. <span style="color: #4f81bd">خادم <bdi dir="ltr" class="odt-ltr-term">PWS</bdi></span></h3>
+<p><a id="toc14772387"></a></p>
+<h4 id="8191">8.1.9.1. <span style="color: #4f81bd">التثبيت</span></h4>
+<p><bdi dir="ltr" class="odt-ltr-term">PWS</bdi> (خادم الويب الشخصي) هو إصدار شخصي من <bdi dir="ltr" class="odt-ltr-term">IIS</bdi> (خادم معلومات الإنترنت) من <bdi dir="ltr" class="odt-ltr-term">Microsoft.</bdi> يتوفر <bdi dir="ltr" class="odt-ltr-term">IIS</bdi> على أجهزة <bdi dir="ltr" class="odt-ltr-term">NT</bdi> و 2000. على أجهزة <bdi dir="ltr" class="odt-ltr-term">Win9x</bdi>، يتم تضمين <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> عادةً في حزمة تثبيت <bdi dir="ltr" class="odt-ltr-term">Internet Explorer.</bdi> ومع ذلك، لا يتم تثبيته بشكل افتراضي. يجب عليك إجراء تثبيت مخصص لـ <bdi dir="ltr" class="odt-ltr-term">IE</bdi> وطلب تثبيت <bdi dir="ltr" class="odt-ltr-term">PWS.</bdi> كما أنه متوفر في <em>حزمة خيارات <bdi dir="ltr" class="odt-ltr-term">NT 4.0</bdi> لـ <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 95</em>.</p>
+<p><a id="toc14772388"></a></p>
+<h4 id="8192">8.1.9.2. <span style="color: #4f81bd">الاختبارات الأولية</span></h4>
+<p>الدليل الجذر لصفحات الويب الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> هو <em><bdi dir="ltr" class="odt-ltr-term">drive:</bdi>\<bdi dir="ltr" class="odt-ltr-term">inetpub</bdi>\</em><bdi dir="ltr" class="odt-ltr-term">wwwroot</bdi>، حيث <em><bdi dir="ltr" class="odt-ltr-term">drive</bdi></em> هو القرص الذي قمت بتثبيت <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> عليه. سنفترض فيما يلي أن هذا القرص هو <bdi dir="ltr" class="odt-ltr-term">D.</bdi> وبالتالي، فإن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <em><bdi dir="ltr" class="odt-ltr-term">http://machine/rep1/page1.html</bdi></em> يتوافق مع الملف <em><bdi dir="ltr" class="odt-ltr-term">d:</bdi>\<bdi dir="ltr" class="odt-ltr-term">inetpub</bdi>\<bdi dir="ltr" class="odt-ltr-term">wwwroot</bdi>\<bdi dir="ltr" class="odt-ltr-term">rep1</bdi>\<bdi dir="ltr" class="odt-ltr-term">page1.html</bdi></em>. يقوم خادم <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> بتفسير أي ملف بامتداد <strong>.asp</strong> (<bdi dir="ltr" class="odt-ltr-term">Active Server Pages</bdi>) على أنه برنامج نصي يجب تنفيذه لإنشاء صفحة <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi></p>
+<p>يعمل <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> على المنفذ 80 بشكل افتراضي. وكذلك خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache...</bdi> لذلك يجب إيقاف <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> للعمل مع <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> إذا كان لديك كلا الخادمين. الحل الآخر هو تكوين <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> للعمل على منفذ مختلف. في ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Apache httpd.conf</bdi>، استبدل السطر <mark style="background-color: #ffff00"><code>Port 80&lt;/mark&gt;</code> بـ <mark style="background-color: #ffff00"><code>Port 81&lt;/mark&gt;</code>. سيعمل Apache الآن على المنفذ 81 ويمكن استخدامه في نفس الوقت مع PWS. إذا كان PWS قيد التشغيل وطلبت عنوان URL <code>http://localhost</code>، فسترى صفحة مشابهة لما يلي:</p>
+<p><img src="images/10000000000001F3000000D2F165A6EC.png" width="499" height="210" style="width:13.203cm;height:5.556cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F3000000D2F165A6EC.png" /></p>
+<p><a id="toc14772389"></a></p>
+<h4 id="8193-php-pws">8.1.9.3. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">PHP</bdi> - رابط <bdi dir="ltr" class="odt-ltr-term">PWS</bdi></span></h4>
+<ol>
+  <li>فيما يلي ملف<b> .reg </b>لتعديل السجل. انقر نقرًا مزدوجًا على هذا الملف لتعديل السجل. هنا، توجد مكتبة <i><bdi dir="ltr" class="odt-ltr-term">DLL</bdi></i> المطلوبة في <i><bdi dir="ltr" class="odt-ltr-term">d:</bdi>\<bdi dir="ltr" class="odt-ltr-term">php4</bdi> </i>جنبًا إلى جنب مع الملف القابل للتنفيذ لـ <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> قم بالتعديل حسب الحاجة. يجب مضاعفة علامات البار المائلة العكسية (\) في مسار مكتبة <bdi dir="ltr" class="odt-ltr-term">DLL.</bdi>
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>REGEDIT4
+<a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>
+<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\w3svc\parameters\Script Map]
+<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>&quot;.php&quot;=&quot;d:\\php4\\php4isapi.dll&quot;
+</code></pre></div>
+<ol>
+  <li>أعد تشغيل الجهاز حتى تصبح تغييرات السجل سارية المفعول.
+  </li>
+</ol>
+
+<ol>
+  <li>أنشئ مجلد <b>&quot;php&quot; </b>في <i><bdi dir="ltr" class="odt-ltr-term">d:</bdi>\<bdi dir="ltr" class="odt-ltr-term">inetpub</bdi>\</i><bdi dir="ltr" class="odt-ltr-term">wwwroot</bdi>، وهو جذر خادم <bdi dir="ltr" class="odt-ltr-term">PWS.</bdi> بمجرد الانتهاء، افتح <bdi dir="ltr" class="odt-ltr-term">PWS</bdi> وانتقل إلى علامة التبويب &quot;<bdi dir="ltr" class="odt-ltr-term">Advanced</bdi>&quot;. انقر فوق الزر &quot;<bdi dir="ltr" class="odt-ltr-term">Add</bdi>&quot; لإنشاء دليل افتراضي:
+  </li>
+</ol>
+
+<p><em>الدليل/استعراض: <bdi dir="ltr" class="odt-ltr-term">d:</bdi>\<bdi dir="ltr" class="odt-ltr-term">inetpub</bdi>\<bdi dir="ltr" class="odt-ltr-term">wwwroot</bdi>\php</em></p>
+<p><em>الاسم المستعار: php</em></p>
+<p><em>حدد مربع &quot;تشغيل&quot;.</em></p>
+<ol>
+  <li>قم بتأكيد الإعدادات وأعد تشغيل <bdi dir="ltr" class="odt-ltr-term">PWS.</bdi> ضع الملف <b><bdi dir="ltr" class="odt-ltr-term">intro.php</bdi> </b>في <i><bdi dir="ltr" class="odt-ltr-term">d:</bdi>\<bdi dir="ltr" class="odt-ltr-term">inetpub</bdi>\<bdi dir="ltr" class="odt-ltr-term">wwwroot</bdi>\php</i><b>، </b>بحيث يحتوي فقط على السطر التالي:
+  </li>
+</ol>
+
+<p><strong>&lt;? <bdi dir="ltr" class="odt-ltr-term">phpinfo</bdi>() ?&gt;</strong></p>
+<ol>
+  <li>اطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><i> <bdi dir="ltr" class="odt-ltr-term">http://localhost/php/intro.php</bdi> </i>من خادم <bdi dir="ltr" class="odt-ltr-term">PWS.</bdi> ومن المفترض أن ترى قائمة بمعلومات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> التي يتم عرضها بالفعل باستخدام <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi>
+  </li>
+</ol>
+
+<p><a id="toc14772390"></a></p>
+<h3 id="8110-tomcat-java-jsp-java">8.1.10. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi> سيرفلتات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> و <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> (صفحات خادم <bdi dir="ltr" class="odt-ltr-term">Java</bdi>)</span></h3>
+<p><bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> هو خادم ويب يقوم بإنشاء صفحات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> باستخدام السيرفلت (برامج <bdi dir="ltr" class="odt-ltr-term">Java</bdi> التي يتم تنفيذها بواسطة خادم الويب) أو <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> (صفحات خادم <bdi dir="ltr" class="odt-ltr-term">Java</bdi>)، والتي تجمع بين كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi> وكود <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> وهو ما يعادل <bdi dir="ltr" class="odt-ltr-term">ASP</bdi> (صفحات الخادم النشطة) على خادم <bdi dir="ltr" class="odt-ltr-term">IIS/PWS</bdi> من <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi>، حيث يتم دمج كود <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> أو <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> مع كود <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi></p>
+<p><a id="toc14772391"></a></p>
+<h4 id="81101">8.1.10.1. <span style="color: #4f81bd">التثبيت</span></h4>
+<p>تومكات متاح على الرابط: <strong><bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org.</bdi></strong>  ستقوم بتنزيل ملف تثبيت بتنسيق .<bdi dir="ltr" class="odt-ltr-term">exe.</bdi> عند تشغيل هذا البرنامج، سيطلب منك أولاً تحديد <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> الذي سيستخدمه. وذلك لأن تومكات يتطلب <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> لتثبيت نفسه ثم لتجميع وتنفيذ سيرفلتات جافا. لذلك يجب أن يكون لديك <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> جافا مثبتًا قبل تثبيت تومكات. يوصى باستخدام أحدث إصدار من <bdi dir="ltr" class="odt-ltr-term">JDK.</bdi> سيؤدي التثبيت إلى إنشاء بنية دليل &lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;:</p>
+<p><img src="images/10000000000000AC000000AA46B5972C.png" width="172" height="170" style="width:4.551cm;height:4.498cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AC000000AA46B5972C.png" /></p>
+<p>يتضمن ذلك ببساطة استخراج هذا الأرشيف إلى دليل. اختر دليلًا يحتوي مساره على أسماء فقط بدون مسافات (ليس، على سبيل المثال، &quot;<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>&quot;)، لأن هناك خطأ في عملية تثبيت <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> استخدم، على سبيل المثال، <bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi> أو <bdi dir="ltr" class="odt-ltr-term">D:</bdi>\<bdi dir="ltr" class="odt-ltr-term">tomcat.</bdi> لنسمي هذا الدليل <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;</strong>. بداخله، ستجد مجلدًا باسم <bdi dir="ltr" class="odt-ltr-term">jakarta-tomcat</bdi>، والذي يحتوي على بنية الدليل التالية:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>LOGS           &lt;REP&gt;        15/11/00   9:04 logs
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>LICENSE              2 876  18/04/00  15:56 LICENSE
+<a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a>CONF           &lt;REP&gt;        15/11/00   8:53 conf
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>DOC            &lt;REP&gt;        15/11/00   8:53 doc
+<a id="__codelineno-56-5" name="__codelineno-56-5" href="#__codelineno-56-5"></a>LIB            &lt;REP&gt;        15/11/00   8:53 lib
+<a id="__codelineno-56-6" name="__codelineno-56-6" href="#__codelineno-56-6"></a>SRC            &lt;REP&gt;        15/11/00   8:53 src
+<a id="__codelineno-56-7" name="__codelineno-56-7" href="#__codelineno-56-7"></a>WEBAPPS        &lt;REP&gt;        15/11/00   8:53 webapps
+<a id="__codelineno-56-8" name="__codelineno-56-8" href="#__codelineno-56-8"></a>BIN            &lt;REP&gt;        15/11/00   8:53 bin
+<a id="__codelineno-56-9" name="__codelineno-56-9" href="#__codelineno-56-9"></a>WORK           &lt;REP&gt;        15/11/00   9:04 work
+</code></pre></div>
+<p><a id="toc14772392"></a></p>
+<h4 id="81102-tomcat">8.1.10.2. <span style="color: #4f81bd">بدء/إيقاف تشغيل خادم الويب <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></span></h4>
+<p><bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> هو خادم ويب، تمامًا مثل <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> أو <bdi dir="ltr" class="odt-ltr-term">PWS.</bdi> لتشغيله، استخدم الروابط الموجودة في قائمة البرامج:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>ابدأ تشغيل Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">لبدء تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>إيقاف Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">لإيقافه</div></td></tr></table>
+
+<p>عند بدء تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، تظهر نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi> تحتوي على المحتوى التالي:</p>
+<p><img src="images/10000000000001300000006238751BC5.png" width="304" height="98" style="width:8.043cm;height:2.593cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001300000006238751BC5.png" /></p>
+<p>يمكنك تصغير نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi> هذه. وستظل مفتوحة طالما أن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> قيد التشغيل. يمكنك بعد ذلك الانتقال إلى الاختبارات الأولى. يعمل خادم الويب <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> على المنفذ 8080. بمجرد تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، افتح متصفح ويب وأدخل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080</bdi></strong>. يجب أن ترى الصفحة التالية:</p>
+<p><img src="images/10000000000001930000011E74DBF1C6.png" width="403" height="286" style="width:10.663cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001930000011E74DBF1C6.png" /></p>
+<p>اتبع رابط <strong>أمثلة <bdi dir="ltr" class="odt-ltr-term">Servlet</bdi></strong>:</p>
+<p><img src="images/10000000000002750000009DD0BB5A7B.png" width="604" height="151" style="width:15.991cm;height:3.992cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000009DD0BB5A7B.png" /></p>
+<p>انقر على رابط <em>«تنفيذ»</em> الخاص <em>بـ</em> <bdi dir="ltr" class="odt-ltr-term">RequestParameters</bdi>، ثم انقر على الرابط الخاص بـ <em><bdi dir="ltr" class="odt-ltr-term">Source</bdi></em>. ستحصل على لمحة أولية عن ماهية «سيرفلت» جافا. يمكنك القيام بنفس الشيء مع الروابط الموجودة في صفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi></p>
+<p>لإيقاف <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، استخدم رابط &quot;<em>إيقاف <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></em>&quot; في قائمة &quot;البرامج&quot;.</p>
+<p><a id="toc14772393"></a></p>
+<h3 id="8111-jbuilder">8.1.11. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi></span></h3>
+<p><bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> هو بيئة لتطوير تطبيقات <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> لإنشاء خوادم <bdi dir="ltr" class="odt-ltr-term">Java</bdi> بدون واجهات رسومية، لا تكون مثل هذه البيئة ضرورية تمامًا. يكفي وجود محرر نصوص و<bdi dir="ltr" class="odt-ltr-term">JDK.</bdi> ومع ذلك، يقدم <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> بعض المزايا مقارنة بالطريقة السابقة:</p>
+<ul>
+  <li>سهولة تصحيح الأخطاء: يبرز المُجمِّع الأسطر الخاطئة في البرنامج، ومن السهل الانتقال إليها
+  </li>
+  <li>إكمال الكود: عند استخدام كائن <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، يعرض <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> قائمة بخصائصه وأساليبه بشكل مضمن. وهذا مفيد جدًا، نظرًا لأن معظم كائنات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> تحتوي على العديد من الخصائص والأساليب التي يصعب تذكرها.
+  </li>
+</ul>
+
+<p>يمكن العثور على <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> على <strong><bdi dir="ltr" class="odt-ltr-term">http://www.borland.com/jbuilder</bdi></strong>. يجب عليك ملء نموذج للحصول على البرنامج. يتم إرسال مفتاح التنشيط عبر البريد الإلكتروني. لتثبيت <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> 7، على سبيل المثال، تم اتباع الخطوات التالية:</p>
+<ul>
+  <li>تم تنزيل ثلاثة ملفات <bdi dir="ltr" class="odt-ltr-term">ZIP:</bdi> واحد للتطبيق، وواحد للوثائق، وواحد للأمثلة. يحتوي كل ملف من ملفات <bdi dir="ltr" class="odt-ltr-term">ZIP</bdi> هذه على رابط منفصل على موقع <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> الإلكتروني.
+  </li>
+  <li>أولاً، تم تثبيت التطبيق، ثم الوثائق، وأخيرًا الأمثلة
+  </li>
+  <li>عند تشغيل التطبيق لأول مرة، يُطلب منك إدخال مفتاح التنشيط: وهو المفتاح الذي تم إرساله إليك عبر البريد الإلكتروني. في الإصدار 7، هذا المفتاح هو في الواقع ملف نصي كامل يمكن وضعه، على سبيل المثال، في مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">JB7.</bdi> وعندما يُطلب منك إدخال المفتاح، تقوم بتحديد الملف المعني. وبمجرد القيام بذلك، لن يُطلب منك إدخال المفتاح مرة أخرى.
+  </li>
+</ul>
+
+<p>هناك بعض الإعدادات المفيدة التي يجب تكوينها إذا كنت ترغب في استخدام <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> لإنشاء سيرفلتات <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> الإصدار المسمى &quot;<bdi dir="ltr" class="odt-ltr-term">Personal</bdi>&quot; من <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> هو إصدار مبسط لا يتضمن جميع الفئات اللازمة لتطوير الويب باستخدام <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> يمكنك تكوين <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> لاستخدام مكتبات الفئات التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> وإليك كيفية القيام بذلك:</p>
+<ul>
+  <li>قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000336000000C712E719CB.png" width="680" height="165" style="width:17.979cm;height:4.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000336000000C712E719CB.png" /></p>
+<ul>
+  <li>قم بتمكين خيار<i> <bdi dir="ltr" class="odt-ltr-term">Tools/Configure JDKs</bdi></i>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000348000000FC3E5ED2E5.png" width="680" height="204" style="width:17.979cm;height:5.394cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000348000000FC3E5ED2E5.png" /></p>
+<p>في قسم <em>إعدادات <bdi dir="ltr" class="odt-ltr-term">JDK</bdi></em> أعلاه، يعرض حقل <em>الاسم</em> عادةً <bdi dir="ltr" class="odt-ltr-term">JDK 1.3.1</bdi>. إذا كان لديك إصدار أحدث من <bdi dir="ltr" class="odt-ltr-term">JDK</bdi>، فاستخدم زر <em>التغيير</em> لتحديد دليل التثبيت الخاص به. أعلاه، حددنا الدليل <em><bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">jdk14</bdi></em> حيث تم تثبيت <bdi dir="ltr" class="odt-ltr-term">JDK 1.4</bdi>. من الآن فصاعدًا، سيستخدم <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> هذا الإصدار من <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> في عمليات التجميع والتنفيذ. في قسم (<bdi dir="ltr" class="odt-ltr-term">Class</bdi>, <bdi dir="ltr" class="odt-ltr-term">Source</bdi>, <bdi dir="ltr" class="odt-ltr-term">Documentation</bdi>)، سترى قائمة بجميع مكتبات الفئات التي سيقوم <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> بمسحها — في هذه الحالة، الفئات من <bdi dir="ltr" class="odt-ltr-term">JDK 1.4</bdi>. الفئات المضمنة في هذا <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> ليست كافية لتطوير الويب باستخدام <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> لإضافة مكتبات فئات إضافية، استخدم زر <em><bdi dir="ltr" class="odt-ltr-term">Add</bdi></em> وحدد ملفات <em>.jar</em> الإضافية التي تريد استخدامها. ملفات .jar هي مكتبات فئات. يتضمن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.x جميع مكتبات الفئات اللازمة لتطوير الويب. وهي موجودة في <em>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</em>، حيث <em>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;</em> هو دليل تثبيت <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></p>
+<p><img src="images/100000000000028D0000010D9D0A86D8.png" width="653" height="269" style="width:17.277cm;height:7.117cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028D0000010D9D0A86D8.png" /></p>
+<p>باستخدام الزر <em>&quot;إضافة</em>&quot;، سنقوم بإضافة هذه المكتبات، واحدة تلو الأخرى، إلى قائمة المكتبات التي يقوم <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> بمسحها:</p>
+<p><img src="images/100000000000021700000114277D4A9F.png" width="535" height="276" style="width:14.155cm;height:7.303cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021700000114277D4A9F.png" /></p>
+<p>من الآن فصاعدًا، يمكنك ترجمة برامج <bdi dir="ltr" class="odt-ltr-term">Java</bdi> المتوافقة مع معيار <bdi dir="ltr" class="odt-ltr-term">J2EE</bdi>، بما في ذلك <bdi dir="ltr" class="odt-ltr-term">Java servlets.</bdi> يُستخدم <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> للترجمة فقط؛ أما التنفيذ فيتم لاحقًا بواسطة <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> وفقًا للإجراءات الموضحة في الدورة التدريبية.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        هذا البرنامج التعليمي الذي كتبه <strong>Serge Tahé</strong> متاح للجمهور وفقًا لشروط
+<em>Creative Commons Attribution – Non-commercial –
+ShareAlike 3.0 Unported</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
