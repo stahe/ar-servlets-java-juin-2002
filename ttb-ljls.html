@@ -738,7 +738,7 @@
 </ul>
 
 <p>المشكلة المطروحة هي: كيف يتتبع الخادم المعلومات <bdi dir="ltr" class="odt-ltr-term">I1</bdi> و <bdi dir="ltr" class="odt-ltr-term">I2</bdi> المرتبطة بالعميل <bdi dir="ltr" class="odt-ltr-term">C1</bdi>؟ تسمى هذه المشكلة تتبع جلسة عمل العميل <bdi dir="ltr" class="odt-ltr-term">C1.</bdi> لفهم السبب الجذري لها، دعونا نفحص الرسم التخطيطي لتطبيق خادم <bdi dir="ltr" class="odt-ltr-term">TCP-IP</bdi> يخدم عدة عملاء في وقت واحد:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D9000000D525D75D86.png" width="364" height="107" style="display:inline-block; margin:4px;width:9.643cm;height:2.819cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D9000000D525D75D86.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000002D9000000D525D75D86.png" width="364" height="107" style="display:inline-block; margin:4px;width:9.643cm;height:2.819cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D9000000D525D75D86.png" /></td></tr></table>
 
 <p>في تطبيق خادم-عميل <bdi dir="ltr" class="odt-ltr-term">TCP-IP</bdi> كلاسيكي:</p>
 <ul>
@@ -818,7 +818,7 @@
   </li>
 </ul>
 
-<p><strong><bdi dir="ltr" class="odt-ltr-term">Set-Cookie: param1</bdi>=<bdi dir="ltr" class="odt-ltr-term">value1</bdi>;<bdi dir="ltr" class="odt-ltr-term">param2</bdi>=<bdi dir="ltr" class="odt-ltr-term">value2</bdi>;....</strong></p>
+<p><strong><bdi dir="ltr" class="odt-ltr-term">Set-Cookie: param1</bdi>=<bdi dir="ltr" class="odt-ltr-term">value1;param2</bdi>=<bdi dir="ltr" class="odt-ltr-term">value2</bdi>;....</strong></p>
 <p>حيث <em><bdi dir="ltr" class="odt-ltr-term">param1</bdi> و <bdi dir="ltr" class="odt-ltr-term">param2</bdi> وما إلى ذلك</em> هي أسماء المعلمات والقيم المقابلة لها. وسيكون الرمز المميز من بين هذه المعلمات. في كثير من الأحيان، يتم تضمين الرمز المميز فقط في ملف تعريف الارتباط، مع قيام الخادم بتخزين المعلومات الأخرى في المجلد المرتبط بالرمز المميز. سيقوم المتصفح الذي يتلقى ملف تعريف الارتباط بتخزينه في ملف على القرص. بعد استجابة الخادم، يتم إغلاق الاتصال (يغادر العميل الجلسة مع الرمز المميز الخاص به). </p>
 <ul>
   <li>(تابع)
@@ -829,7 +829,7 @@
   </li>
 </ul>
 
-<p><strong><bdi dir="ltr" class="odt-ltr-term">Cookie: param1</bdi>=<bdi dir="ltr" class="odt-ltr-term">value1</bdi>;<bdi dir="ltr" class="odt-ltr-term">param2</bdi>=<bdi dir="ltr" class="odt-ltr-term">value2</bdi>;....</strong></p>
+<p><strong><bdi dir="ltr" class="odt-ltr-term">Cookie: param1</bdi>=<bdi dir="ltr" class="odt-ltr-term">value1;param2</bdi>=<bdi dir="ltr" class="odt-ltr-term">value2</bdi>;....</strong></p>
 <p>من بين المعلمات التي يرسلها المتصفح، سيجد الخادم الرمز الذي يسمح له بالتعرف على العميل واسترداد المعلومات المرتبطة به.</p>
 <p>هذا هو الشكل الأكثر استخدامًا للرمز المميز. له عيب واحد: يمكن للمستخدم تكوين متصفحه لرفض ملفات تعريف الارتباط. عندئذٍ لا يمكن لهؤلاء المستخدمين الوصول إلى تطبيقات الويب التي تستخدم ملفات تعريف الارتباط.</p>
 <ul>
@@ -837,9 +837,9 @@
     <ul>
       <li>يقوم العميل بإرسال طلبه الأول (يتعرف الخادم على هذا الطلب لأن العميل لا يمتلك رمزًا مميزًا)
       </li>
-      <li>يرسل الخادم استجابته. تحتوي هذه الاستجابة على روابط يجب على المستخدم استخدامها لمواصلة استخدام التطبيق. في عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لكل رابط من هذه الروابط، يضيف الخادم الرمز المميز بالشكل <i><bdi dir="ltr" class="odt-ltr-term">URL</bdi>;<bdi dir="ltr" class="odt-ltr-term">token</bdi>=<bdi dir="ltr" class="odt-ltr-term">value</bdi></i>.
+      <li>يرسل الخادم استجابته. تحتوي هذه الاستجابة على روابط يجب على المستخدم استخدامها لمواصلة استخدام التطبيق. في عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لكل رابط من هذه الروابط، يضيف الخادم الرمز المميز بالشكل <i><bdi dir="ltr" class="odt-ltr-term">URL;token</bdi>=<bdi dir="ltr" class="odt-ltr-term">value</bdi></i>.
       </li>
-      <li>عندما ينقر المستخدم على أحد الروابط لمواصلة استخدام التطبيق، يرسل المتصفح طلبًا إلى خادم الويب، يتضمن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب <i>(<bdi dir="ltr" class="odt-ltr-term">URL</bdi>;<bdi dir="ltr" class="odt-ltr-term">token</bdi>=<bdi dir="ltr" class="odt-ltr-term">value</bdi></i>) في رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi> عندئذٍ يتمكن الخادم من استرداد الرمز المميز.
+      <li>عندما ينقر المستخدم على أحد الروابط لمواصلة استخدام التطبيق، يرسل المتصفح طلبًا إلى خادم الويب، يتضمن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب <i>(<bdi dir="ltr" class="odt-ltr-term">URL;token</bdi>=<bdi dir="ltr" class="odt-ltr-term">value</bdi></i>) في رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi> عندئذٍ يتمكن الخادم من استرداد الرمز المميز.
       </li>
     </ul>
   </li>
@@ -847,43 +847,43 @@
 
 <h2 id="42-java">4.2. <span style="color: #4f81bd">واجهة برمجة تطبيقات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> لتتبع الجلسة</span></h2>
 <p>سنعرض الآن الطرق الرئيسية المفيدة لتتبع الجلسات:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">HttpSession</span><span class="w"> </span><span class="o">[</span><span class="n">HttpServletRequest</span><span class="o">]</span><span class="p">.</span><span class="na">getSession</span><span class="p">()</span>
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يسترد كائن <i>الجلسة </i>الذي ينتمي إليه الطلب الحالي. إذا لم يكن الطلب جزءًا من جلسة بعد، يتم إنشاء واحدة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يسترد كائن <i>الجلسة </i>الذي ينتمي إليه الطلب الحالي. إذا لم يكن الطلب جزءًا من جلسة بعد، يتم إنشاء واحدة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>String [HttpSession].getId()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">معرف الجلسة الحالية</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">معرف الجلسة الحالية</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>long [HttpSession].getCreationTime()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تاريخ إنشاء الجلسة الحالية (عدد المللي ثانية المنقضية منذ 1 يناير 1970، الساعة 00:00).</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تاريخ إنشاء الجلسة الحالية (عدد المللي ثانية المنقضية منذ 1 يناير 1970، الساعة 00:00).</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>long [HttpSession].getLastAccessedTime()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تاريخ آخر وصول للعميل إلى الجلسة</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تاريخ آخر وصول للعميل إلى الجلسة</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>long [HttpSession].getMaxInactiveInterval()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">المدة القصوى بالثواني لعدم النشاط في الجلسة. بعد هذه الفترة، تصبح الجلسة غير صالحة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">المدة القصوى بالثواني لعدم النشاط في الجلسة. بعد هذه الفترة، تصبح الجلسة غير صالحة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>[HttpSession].setMaxInactiveInterval(int duration)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يحدد المدة القصوى لعدم النشاط لجلسة العمل بالثواني. بعد هذه الفترة، تصبح الجلسة غير صالحة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يحدد المدة القصوى لعدم النشاط لجلسة العمل بالثواني. بعد هذه الفترة، تصبح الجلسة غير صالحة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>boolean [HttpSession].isNew()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">true</bdi> إذا تم إنشاء الجلسة للتو</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">true</bdi> إذا تم إنشاء الجلسة للتو</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[HttpSession].setAttribute(String parameter, Object value)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يربط قيمة بمعلمة في جلسة معينة. تسمح هذه الآلية بتخزين المعلومات التي ستظل متاحة طوال الجلسة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يربط قيمة بمعلمة في جلسة معينة. تسمح هذه الآلية بتخزين المعلومات التي ستظل متاحة طوال الجلسة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[HttpSession].removeAttribute(String parameter)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يزيل <i>المعلمة </i>من بيانات الجلسة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يزيل <i>المعلمة </i>من بيانات الجلسة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Object [HttpSession].getAttribute(String parameter)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تُرجع القيمة المرتبطة بالمعلمة في الجلسة. تُرجع <i><bdi dir="ltr" class="odt-ltr-term">null</bdi> </i>إذا كانت المعلمة غير موجودة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تُرجع القيمة المرتبطة بالمعلمة في الجلسة. تُرجع <i><bdi dir="ltr" class="odt-ltr-term">null</bdi> </i>إذا كانت المعلمة غير موجودة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>التعداد [HttpSession].getAttributeNames()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يسرد جميع سمات الجلسة الحالية كعدد</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يسرد جميع سمات الجلسة الحالية كعدد</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>[HttpSession].invalidate()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يغلق الجلسة الحالية. يتم إتلاف جميع المعلومات المرتبطة بها.</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يغلق الجلسة الحالية. يتم إتلاف جميع المعلومات المرتبطة بها.</div></td></tr></table>
 
 <h2 id="43-1">4.3. <span style="color: #4f81bd">مثال 1</span></h2>
 <p>نقدم مثالاً مأخوذًا من الكتاب الممتاز &quot;<bdi dir="ltr" class="odt-ltr-term">Programming with J2EE</bdi>&quot; الذي نشرته دار <bdi dir="ltr" class="odt-ltr-term">Wrox</bdi> ووزعته <bdi dir="ltr" class="odt-ltr-term">Eyrolles.</bdi> هذا الكتاب هو كنز دفين من المعلومات عالية المستوى لمطوري حلول الويب بلغة <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> تم تكييف التطبيق المقدم في هذا الكتاب كبرنامج <bdi dir="ltr" class="odt-ltr-term">Java servlet</bdi> واحد ليصبح هنا برنامج <bdi dir="ltr" class="odt-ltr-term">servlet</bdi> رئيسي يستدعي صفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> لعرض مختلف الاستجابات الممكنة للعميل.</p>
@@ -927,22 +927,22 @@
 <a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="nt">&lt;/web-app&gt;</span>
 </code></pre></div>
 <p>يُسمى السيرفلت الرئيسي <strong><bdi dir="ltr" class="odt-ltr-term">cycledevie</bdi></strong> (<em><bdi dir="ltr" class="odt-ltr-term">servlet-name</bdi></em>) وهو مرتبط بملف <strong><bdi dir="ltr" class="odt-ltr-term">cycledevie.class</bdi></strong> (<em><bdi dir="ltr" class="odt-ltr-term">servlet-class</bdi></em>). وله اسم مستعار <strong>/<bdi dir="ltr" class="odt-ltr-term">cycledevie</bdi></strong> (<em><bdi dir="ltr" class="odt-ltr-term">servlet-mapping</bdi></em>) الذي يسمح باستدعائه عبر عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <em><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/sessions/cycledevie</bdi></em>. وله ثلاث معلمات تهيئة:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>urlSessionValide
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي تعرض خصائص الجلسة الحالية</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي تعرض خصائص الجلسة الحالية</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>urlSessionInvalid
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي يتم عرضها بعد إبطال صلاحية الجلسة الحالية</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي يتم عرضها بعد إبطال صلاحية الجلسة الحالية</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>urlErreur
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي يتم عرضها في حالة حدوث خطأ في التهيئة للبرنامج الخادم الرئيسي <b><bdi dir="ltr" class="odt-ltr-term">cycledevie</bdi></b></div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للصفحة التي يتم عرضها في حالة حدوث خطأ في التهيئة للبرنامج الخادم الرئيسي <b><bdi dir="ltr" class="odt-ltr-term">cycledevie</bdi></b></div></td></tr></table>
 
 <p>مكونات تطبيق <strong>الجلسات</strong> هي كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>دورة الحياة
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">البرنامج الخادم الرئيسي - يحلل طلب العميل:</div><ul>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">البرنامج الخادم الرئيسي - يحلل طلب العميل:</div><ul>
   <li>إذا كانت هذه الصفحة جزءًا من جلسة عمل، فإنها تنقل التحكم إلى صفحة<b> <bdi dir="ltr" class="odt-ltr-term">valide.</bdi></b>jsp، التي تعرض تفاصيل الجلسة. من هذه الصفحة، يمكن للمستخدم:
     <ul>
       <li>إعادة تحميلها
@@ -955,10 +955,10 @@
   </li>
   <li>إذا واجهت الخدمة أخطاء أثناء التهيئة، فإنها تنقل التحكم إلى صفحة<b> <bdi dir="ltr" class="odt-ltr-term">error.</bdi></b>jsp، التي ستعرض رسالة خطأ.
   </li>
-</ul></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</ul></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>valide.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><ul>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><ul>
   <li>تعرض تفاصيل الجلسة الحالية وتوفر رابطين:
     <ul>
       <li>أحدهما لإعادة تحميل الصفحة ومشاهدة كيفية تغير المعلمة الخاصة بآخر وصول إلى الجلسة الحالية
@@ -967,13 +967,13 @@
       </li>
     </ul>
   </li>
-</ul></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</ul></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>invalid.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يتم عرضه عندما يقوم المستخدم بإبطال صلاحية الجلسة الحالية. ثم يعرض إنشاء جلسة جديدة.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يتم عرضه عندما يقوم المستخدم بإبطال صلاحية الجلسة الحالية. ثم يعرض إنشاء جلسة جديدة.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>error.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يتم عرضها عندما يواجه السيرفلت الرئيسي أخطاء أثناء التهيئة.</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يتم عرضها عندما يواجه السيرفلت الرئيسي أخطاء أثناء التهيئة.</div></td></tr></table>
 
 <p><em>دورة حياة</em> السيرفلت الرئيسي هي كما يلي: </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
@@ -1143,10 +1143,10 @@
 </ul>
 
 <p>يوفر خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حلاً لمشكلة المستخدمين الذين يعطلون ملفات تعريف الارتباط في متصفحهم. ويستخدم آليتين لتنفيذ الرمز المميز المذكور في بداية هذه الفقرة: ملفات تعريف الارتباط وإعادة كتابة عناوين <bdi dir="ltr" class="odt-ltr-term">URL.</bdi> إذا لم يكن ملف تعريف ارتباط الجلسة متاحًا، فسيحاول استرداد الرمز المميز من عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي طلبه العميل. لكي يعمل هذا، يجب أن يحتوي عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> على الرمز المميز. بشكل عام، يجب أن تحتوي جميع الروابط التي يتم إنشاؤها في مستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> والتي تشير إلى تطبيق الويب على الرمز المميز للتطبيق. يمكن القيام بذلك باستخدام طريقة <em><bdi dir="ltr" class="odt-ltr-term">encodeURL</bdi></em>:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>String [HttpResponse].encodeURL(String URL)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تضيف رمز الجلسة الحالي إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تم تمريره كمعلمة في النموذج <i><bdi dir="ltr" class="odt-ltr-term">URL</bdi>;<bdi dir="ltr" class="odt-ltr-term">jsessionid</bdi>=<bdi dir="ltr" class="odt-ltr-term">xxxx</bdi></i></div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تضيف رمز الجلسة الحالي إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تم تمريره كمعلمة في النموذج <i><bdi dir="ltr" class="odt-ltr-term">URL;jsessionid</bdi>=<bdi dir="ltr" class="odt-ltr-term">xxxx</bdi></i></div></td></tr></table>
 
 <p>نقوم بتعديل تطبيقنا على النحو التالي:</p>
 <ul>
@@ -1855,7 +1855,7 @@
 <a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="w">                </span><span class="p">}</span><span class="c1">//while</span>
 </code></pre></div>
 <h2 id="46-4">4.6. <span style="color: #4f81bd">المثال 4</span></h2>
-<p>في المثال السابق، يعيد عميل الويب الرمز المميز كملف تعريف ارتباط. وقد رأينا أنه يمكنه أيضًا إعادته ضمن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب نفسه بالشكل <em><bdi dir="ltr" class="odt-ltr-term">URL</bdi>;<bdi dir="ltr" class="odt-ltr-term">jsessionid</bdi>=xxx</em>. دعونا نتحقق من ذلك. تم تغيير اسم برنامج <em><bdi dir="ltr" class="odt-ltr-term">clientCompteur.java</bdi></em> إلى <em><bdi dir="ltr" class="odt-ltr-term">clientCompteur2.java</bdi></em> وتعديله على النحو التالي:</p>
+<p>في المثال السابق، يعيد عميل الويب الرمز المميز كملف تعريف ارتباط. وقد رأينا أنه يمكنه أيضًا إعادته ضمن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب نفسه بالشكل <em><bdi dir="ltr" class="odt-ltr-term">URL;jsessionid</bdi>=xxx</em>. دعونا نتحقق من ذلك. تم تغيير اسم برنامج <em><bdi dir="ltr" class="odt-ltr-term">clientCompteur.java</bdi></em> إلى <em><bdi dir="ltr" class="odt-ltr-term">clientCompteur2.java</bdi></em> وتعديله على النحو التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>....
 <a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="w">                </span>//<span class="w"> </span>on<span class="w"> </span>demande<span class="w"> </span>l<span class="err">&#39;</span>URL<span class="w"> </span>-<span class="w"> </span>envoi<span class="w"> </span>des<span class="w"> </span>entêtes<span class="w"> </span>HTTP
 <a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="w">                </span><span class="k">if</span><span class="o">(</span>JSESSIONID.equals<span class="o">(</span><span class="s2">&quot;&quot;</span><span class="o">))</span>
@@ -1866,7 +1866,7 @@
 <a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="w">                </span>envoie<span class="o">(</span>OUT,<span class="s2">&quot;&quot;</span><span class="o">)</span><span class="p">;</span>
 <a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>....
 </code></pre></div>
-<p>وبالتالي، يطلب العميل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الخاص بالعداد عبر <strong><bdi dir="ltr" class="odt-ltr-term">GET URL</bdi>;<bdi dir="ltr" class="odt-ltr-term">jsessionid</bdi>=<bdi dir="ltr" class="odt-ltr-term">xx HTTP/1.1</bdi></strong> ولم يعد يرسل ملف تعريف ارتباط. هذا هو التغيير الوحيد. فيما يلي نتائج المكالمة الأولية:</p>
+<p>وبالتالي، يطلب العميل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الخاص بالعداد عبر <strong><bdi dir="ltr" class="odt-ltr-term">GET URL;jsessionid</bdi>=<bdi dir="ltr" class="odt-ltr-term">xx HTTP/1.1</bdi></strong> ولم يعد يرسل ملف تعريف ارتباط. هذا هو التغيير الوحيد. فيما يلي نتائج المكالمة الأولية:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">E:\data\serge\Servlets\sessions\jb7&gt;java.bat clientCompteur2 http://localhost:8080/sessions/counter 2</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1936,19 +1936,19 @@
 <p>عند إرسال <strong>الصفحة 1</strong> إلى الخادم، قد يعيدها الخادم مع رمز خطأ إذا كان العمر غير صالح:</p>
 <p><img src="images/100000000000012F000001074274BF6B.png" width="303" height="263" style="width:8.017cm;height:6.959cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012F000001074274BF6B.png" /></p>
 <p>يتكون التطبيق من سيرفلت وأربع صفحات <bdi dir="ltr" class="odt-ltr-term">JSP:</bdi></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>page0.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تعرض <bdi dir="ltr" class="odt-ltr-term">page0</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تعرض <bdi dir="ltr" class="odt-ltr-term">page0</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>page1.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تعرض الصفحة 1</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تعرض الصفحة 1</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>page2.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يعرض الصفحة 2</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يعرض الصفحة 2</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>error.jsp
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تعرض صفحة خطأ</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تعرض صفحة خطأ</div></td></tr></table>
 
 <p>يُسمى تطبيق الويب <strong><bdi dir="ltr" class="odt-ltr-term">suitedepages</bdi></strong> ويتم تكوينه على النحو التالي في ملف <em><bdi dir="ltr" class="odt-ltr-term">server.xml</bdi></em> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="w">                </span><span class="nt">&lt;Context</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;/suitedepages&quot;</span><span class="w"> </span><span class="na">docBase=</span><span class="s">&quot;e:/data/serge/servlets/suitedepages&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
